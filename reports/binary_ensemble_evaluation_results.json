@@ -1,0 +1,31 @@
+{
+  "overall_accuracy": 0.6849,
+  "macro_f1": 0.684,
+  "macro_auc": 0.8053,
+  "composite_score": 0.7239,
+  "selective_accuracy_meets_threshold": 0.8462,
+  "meets_threshold_count": 39,
+  "review_required_count": 34,
+  "per_class": {
+    "Contact": {
+      "precision": 0.7419,
+      "recall": 0.6053,
+      "f1": 0.6667
+    },
+    "Independent": {
+      "precision": 0.6429,
+      "recall": 0.7714,
+      "f1": 0.7013
+    }
+  },
+  "confusion_matrix": [
+    [
+      23,
+      15
+    ],
+    [
+      8,
+      27
+    ]
+  ]
+}

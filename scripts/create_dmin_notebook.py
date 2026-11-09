@@ -1,0 +1,321 @@
+import json
+from pathlib import Path
+
+notebook_path = Path(r"d:\Workspace\TA3\notebooks\dmin_spatial_analysis.ipynb")
+
+cells = [
+    {
+        "cell_type": "markdown",
+        "metadata": {},
+        "source": [
+            "# Analisis Geometris D_min Relasi M3-M2 pada Citra CBCT\n",
+            "\n",
+            "Notebook ini memproses segmentasi volumetrik 3D (.mha) untuk menghitung jarak minimum fisik ($D_{\\min}$) antarpermukaan gigi molar kedua (M2) dan molar ketiga (M3).\n",
+            "\n",
+            "### Alur Kerja:\n",
+            "1. Konfigurasi path folder dataset dan parameter analisis.\n",
+            "2. Parsing metadata volume dan voxel spacing fisik (mm).\n",
+            "3. Ekstraksi voxel permukaan anatomis via erosi biner 3D (26-connectivity).\n",
+            "4. Penentuan jarak minimum fisik ($D_{\\min}$) menggunakan 3D KD-Tree Euclidean query.\n",
+            "5. Klasifikasi rule-based awal (Independent vs Contact/Resorption Zone).\n",
+            "6. Visualisasi irisan sagital beranotasi dan ekspor ringkasan hasil ke CSV."
+        ]
+    },
+    {
+        "cell_type": "markdown",
+        "metadata": {},
+        "source": [
+            "## 1. Konfigurasi Input dan Parameter\n",
+            "Tentukan path folder yang memuat file mask segmentasi (.mha)."
+        ]
+    },
+    {
+        "cell_type": "code",
+        "execution_count": None,
+        "metadata": {},
+        "outputs": [],
+        "source": [
+            "from pathlib import Path\n",
+            "\n",
+            "# Path folder mask segmentasi (.mha)\n",
+            "DATASET_DIR = Path(r\"d:/Workspace/TA3/data/toothfairy2/Dataset112_ToothFairy2/labelsTr\")\n",
+            "\n",
+            "# Folder penyimpanan keluaran CSV dan visualisasi\n",
+            "OUTPUT_DIR = Path(r\"d:/Workspace/TA3/data/processed\")\n",
+            "OUTPUT_DIR.mkdir(parents=True, exist_ok=True)\n",
+            "\n",
+            "# Pasangan FDI gigi yang dianalisis\n",
+            "# Rahang atas (Maxillary): (17, 18) dan (27, 28)\n",
+            "# Rahang bawah (Mandibular): (37, 38) dan (47, 48)\n",
+            "TARGET_PAIRS = [(17, 18), (27, 28)]\n",
+            "\n",
+            "# Ambang batas pemisahan fisik (mm)\n",
+            "DMIN_THRESHOLD_MM = 0.50\n",
+            "\n",
+            "# Batas jumlah berkas yang diproses (atur None untuk memproses seluruh berkas)\n",
+            "MAX_FILES = 20"
+        ]
+    },
+    {
+        "cell_type": "markdown",
+        "metadata": {},
+        "source": [
+            "## 2. Definisi Modul Geometri dan I/O"
+        ]
+    },
+    {
+        "cell_type": "code",
+        "execution_count": None,
+        "metadata": {},
+        "outputs": [],
+        "source": [
+            "import time\n",
+            "import csv\n",
+            "import numpy as np\n",
+            "from scipy import ndimage\n",
+            "from scipy.spatial import cKDTree\n",
+            "import matplotlib.pyplot as plt\n",
+            "import matplotlib.patches as mpatches\n",
+            "\n",
+            "def read_mha(filepath: Path) -> tuple[dict, np.ndarray]:\n",
+            "    \"\"\"\n",
+            "    Membaca berkas MetaImage (.mha) tanpa dependensi eksternal.\n",
+            "    Mengembalikan metadata header dan array numpy 3D (Z, Y, X).\n",
+            "    \"\"\"\n",
+            "    meta = {}\n",
+            "    with open(filepath, \"rb\") as f:\n",
+            "        while True:\n",
+            "            line = f.readline()\n",
+            "            if not line:\n",
+            "                break\n",
+            "            line_str = line.decode(\"ascii\", errors=\"ignore\").strip()\n",
+            "            if \"=\" in line_str:\n",
+            "                k, v = line_str.split(\"=\", 1)\n",
+            "                meta[k.strip()] = v.strip()\n",
+            "            if b\"ElementDataFile\" in line:\n",
+            "                break\n",
+            "        dim = [int(x) for x in meta[\"DimSize\"].split()]\n",
+            "        data = np.fromfile(f, dtype=np.uint8)\n",
+            "        arr = data.reshape((dim[2], dim[1], dim[0]))\n",
+            "    return meta, arr\n",
+            "\n",
+            "def get_spacing_zyx(meta: dict) -> np.ndarray:\n",
+            "    \"\"\"\n",
+            "    Mengekstrak voxel spacing fisik dalam urutan sumbu (Z, Y, X) satuan mm/voxel.\n",
+            "    \"\"\"\n",
+            "    sp = [float(x) for x in meta[\"ElementSpacing\"].split()]\n",
+            "    return np.array([sp[2], sp[1], sp[0]])\n",
+            "\n",
+            "def get_surface_voxels(mask_3d: np.ndarray) -> np.ndarray:\n",
+            "    \"\"\"\n",
+            "    Mengekstrak voxel permukaan luar mask biner via erosi 3D dengan 26-connectivity.\n",
+            "    \"\"\"\n",
+            "    struct = ndimage.generate_binary_structure(3, 3)\n",
+            "    eroded = ndimage.binary_erosion(mask_3d, structure=struct)\n",
+            "    surface = mask_3d ^ eroded\n",
+            "    return np.argwhere(surface)\n",
+            "\n",
+            "def compute_dmin(mask_m2: np.ndarray, mask_m3: np.ndarray, spacing_zyx: np.ndarray):\n",
+            "    \"\"\"\n",
+            "    Menghitung jarak minimum Euclidean fisik (mm) antarpermukaan mask M2 dan M3.\n",
+            "    \"\"\"\n",
+            "    sv_m2 = get_surface_voxels(mask_m2)\n",
+            "    sv_m3 = get_surface_voxels(mask_m3)\n",
+            "\n",
+            "    phys_m2 = sv_m2 * spacing_zyx\n",
+            "    phys_m3 = sv_m3 * spacing_zyx\n",
+            "\n",
+            "    tree = cKDTree(phys_m2)\n",
+            "    dists, idx_m2 = tree.query(phys_m3)\n",
+            "\n",
+            "    best = int(np.argmin(dists))\n",
+            "    dist_mm = float(dists[best])\n",
+            "    coord_m3 = sv_m3[best]\n",
+            "    coord_m2 = sv_m2[idx_m2[best]]\n",
+            "\n",
+            "    return dist_mm, coord_m2, coord_m3"
+        ]
+    },
+    {
+        "cell_type": "markdown",
+        "metadata": {},
+        "source": [
+            "## 3. Eksekusi Batch Scanner\n",
+            "Menjalankan pemindaian pada berkas segmentasi di `DATASET_DIR`."
+        ]
+    },
+    {
+        "cell_type": "code",
+        "execution_count": None,
+        "metadata": {},
+        "outputs": [],
+        "source": [
+            "files = sorted(list(DATASET_DIR.glob(\"*.mha\")))\n",
+            "if MAX_FILES is not None:\n",
+            "    files = files[:MAX_FILES]\n",
+            "\n",
+            "results = []\n",
+            "total_files = len(files)\n",
+            "\n",
+            "print(f\"Memproses {total_files} berkas dari {DATASET_DIR}...\")\n",
+            "\n",
+            "for idx, fp in enumerate(files, 1):\n",
+            "    try:\n",
+            "        meta, arr = read_mha(fp)\n",
+            "        spacing_zyx = get_spacing_zyx(meta)\n",
+            "    except Exception as e:\n",
+            "        print(f\"[{idx}/{total_files}] Gagal membaca {fp.name}: {e}\")\n",
+            "        continue\n",
+            "\n",
+            "    for m2_id, m3_id in TARGET_PAIRS:\n",
+            "        mask_m2 = (arr == m2_id)\n",
+            "        mask_m3 = (arr == m3_id)\n",
+            "\n",
+            "        m2_count = int(np.sum(mask_m2))\n",
+            "        m3_count = int(np.sum(mask_m3))\n",
+            "\n",
+            "        if m2_count == 0 or m3_count == 0:\n",
+            "            status = \"ABSENT_BOTH\" if (m2_count == 0 and m3_count == 0) else (\"ABSENT_M2\" if m2_count == 0 else \"ABSENT_M3\")\n",
+            "            results.append({\n",
+            "                \"file\": fp.name,\n",
+            "                \"pair\": f\"{m2_id}-{m3_id}\",\n",
+            "                \"m2_voxels\": m2_count,\n",
+            "                \"m3_voxels\": m3_count,\n",
+            "                \"dmin_mm\": None,\n",
+            "                \"class\": status,\n",
+            "                \"coord_m2\": None,\n",
+            "                \"coord_m3\": None,\n",
+            "            })\n",
+            "            continue\n",
+            "\n",
+            "        dist_mm, c2, c3 = compute_dmin(mask_m2, mask_m3, spacing_zyx)\n",
+            "        category = \"INDEPENDENT\" if dist_mm > DMIN_THRESHOLD_MM else \"CONTACT_OR_RESORPTION\"\n",
+            "\n",
+            "        results.append({\n",
+            "            \"file\": fp.name,\n",
+            "            \"pair\": f\"{m2_id}-{m3_id}\",\n",
+            "            \"m2_voxels\": m2_count,\n",
+            "            \"m3_voxels\": m3_count,\n",
+            "            \"dmin_mm\": round(dist_mm, 4),\n",
+            "            \"class\": category,\n",
+            "            \"coord_m2\": c2.tolist(),\n",
+            "            \"coord_m3\": c3.tolist(),\n",
+            "        })\n",
+            "\n",
+            "print(\"Pemrosesan selesai.\")"
+        ]
+    },
+    {
+        "cell_type": "markdown",
+        "metadata": {},
+        "source": [
+            "## 4. Ringkasan Statistik dan Ekspor CSV"
+        ]
+    },
+    {
+        "cell_type": "code",
+        "execution_count": None,
+        "metadata": {},
+        "outputs": [],
+        "source": [
+            "valid = [r for r in results if r[\"dmin_mm\"] is not None]\n",
+            "absent = [r for r in results if r[\"dmin_mm\"] is None]\n",
+            "indep = [r for r in valid if r[\"class\"] == \"INDEPENDENT\"]\n",
+            "contact = [r for r in valid if r[\"class\"] == \"CONTACT_OR_RESORPTION\"]\n",
+            "dmins = [r[\"dmin_mm\"] for r in valid]\n",
+            "\n",
+            "print(\"=\" * 60)\n",
+            "print(\"RINGKASAN HASIL PERHITUNGAN D_MIN\")\n",
+            "print(\"=\" * 60)\n",
+            "print(f\"Total pasangan dievaluasi   : {len(results)}\")\n",
+            "print(f\"Gigi tidak lengkap / absen : {len(absent)}\")\n",
+            "print(f\"Pasangan terukur valid      : {len(valid)}\")\n",
+            "print(\"\")\n",
+            "if len(valid) > 0:\n",
+            "    print(f\"INDEPENDENT (> {DMIN_THRESHOLD_MM:.2f} mm)        : {len(indep)} ({len(indep)/len(valid)*100:.1f}%)\")\n",
+            "    print(f\"CONTACT/RESORPTION (<= {DMIN_THRESHOLD_MM:.2f} mm) : {len(contact)} ({len(contact)/len(valid)*100:.1f}%)\")\n",
+            "    print(\"\")\n",
+            "    print(f\"D_min minimum : {min(dmins):.4f} mm\")\n",
+            "    print(f\"D_min maximum : {max(dmins):.4f} mm\")\n",
+            "    print(f\"D_min mean    : {np.mean(dmins):.4f} mm\")\n",
+            "    print(f\"D_min median  : {np.median(dmins):.4f} mm\")\n",
+            "    print(f\"D_min std     : {np.std(dmins):.4f} mm\")\n",
+            "print(\"=\" * 60)\n",
+            "\n",
+            "# Ekspor CSV\n",
+            "csv_out = OUTPUT_DIR / \"dmin_summary.csv\"\n",
+            "with open(csv_out, \"w\", newline=\"\", encoding=\"utf-8\") as f:\n",
+            "    writer = csv.DictWriter(f, fieldnames=[\"file\", \"pair\", \"m2_voxels\", \"m3_voxels\", \"dmin_mm\", \"class\", \"coord_m2\", \"coord_m3\"])\n",
+            "    writer.writeheader()\n",
+            "    writer.writerows(results)\n",
+            "\n",
+            "print(f\"Hasil disimpan ke: {csv_out}\")"
+        ]
+    },
+    {
+        "cell_type": "markdown",
+        "metadata": {},
+        "source": [
+            "## 5. Visualisasi Irisan Sagital pada Kasus Tertentu\n",
+            "Tampilkan irisan sagital yang melalui titik kontak terdekat pada pasangan gigi yang terdeteksi."
+        ]
+    },
+    {
+        "cell_type": "code",
+        "execution_count": None,
+        "metadata": {},
+        "outputs": [],
+        "source": [
+            "if len(valid) > 0:\n",
+            "    sample = valid[0]\n",
+            "    sample_file = DATASET_DIR / sample[\"file\"]\n",
+            "    meta, arr = read_mha(sample_file)\n",
+            "\n",
+            "    c2 = sample[\"coord_m2\"]\n",
+            "    c3 = sample[\"coord_m3\"]\n",
+            "    x_slice = int((c2[2] + c3[2]) // 2)\n",
+            "\n",
+            "    slice_2d = arr[:, :, x_slice]\n",
+            "    m2_id, m3_id = [int(x) for x in sample[\"pair\"].split(\"-\")]\n",
+            "\n",
+            "    # Visualisasi RGB mask\n",
+            "    h, w = slice_2d.shape\n",
+            "    canvas = np.zeros((h, w, 3), dtype=np.float32)\n",
+            "\n",
+            "    canvas[slice_2d == m2_id] = [0.2, 0.6, 1.0]  # M2 (Biru)\n",
+            "    canvas[slice_2d == m3_id] = [1.0, 0.45, 0.1] # M3 (Oranye)\n",
+            "    other = (slice_2d > 0) & (slice_2d != m2_id) & (slice_2d != m3_id)\n",
+            "    canvas[other] = [0.6, 0.6, 0.6]\n",
+            "\n",
+            "    plt.figure(figsize=(8, 6))\n",
+            "    plt.imshow(canvas, origin=\"upper\")\n",
+            "    plt.plot([c2[1], c3[1]], [c2[0], c3[0]], \"r--\", linewidth=1.5)\n",
+            "    plt.plot(c2[1], c2[0], \"o\", color=\"#38bdf8\", markersize=6, label=f\"M2 (#{m2_id})\")\n",
+            "    plt.plot(c3[1], c3[0], \"o\", color=\"#fb923c\", markersize=6, label=f\"M3 (#{m3_id})\")\n",
+            "\n",
+            "    plt.title(f\"{sample['file']} [{sample['pair']}] | D_min: {sample['dmin_mm']:.4f} mm | Status: {sample['class']}\\nSagittal Slice X={x_slice}\", fontsize=10)\n",
+            "    plt.axis(\"off\")\n",
+            "    plt.legend(loc=\"lower left\")\n",
+            "    plt.tight_layout()\n",
+            "    plt.show()\n",
+            "else:\n",
+            "    print(\"Tidak ada pasangan valid yang dapat divisualisasikan.\")"
+        ]
+    }
+]
+
+nb_dict = {
+    "cells": cells,
+    "metadata": {
+        "language_info": {
+            "name": "python"
+        }
+    },
+    "nbformat": 4,
+    "nbformat_minor": 4
+}
+
+with open(notebook_path, "w", encoding="utf-8") as f:
+    json.dump(nb_dict, f, indent=2)
+
+print(f"Jupyter Notebook berhasil dibuat di: {notebook_path}")

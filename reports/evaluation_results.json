@@ -1,0 +1,43 @@
+{
+  "accuracy": 0.6892,
+  "macro_f1": 0.4618,
+  "macro_auc": 0.8166,
+  "composite_ranking_score": 0.63,
+  "per_class_precision": {
+    "Contact": 0.7667,
+    "Independent": 0.6364,
+    "Resorption": 0.0
+  },
+  "per_class_recall": {
+    "Contact": 0.6053,
+    "Independent": 0.8,
+    "Resorption": 0.0
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        23,
+        15,
+        0
+      ],
+      [
+        7,
+        28,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "classes": [
+      "Contact",
+      "Independent",
+      "Resorption"
+    ]
+  },
+  "total_test_samples": 74,
+  "model_name": "resnet18",
+  "weights_path": "weights\\resnet18_best.pth"
+}

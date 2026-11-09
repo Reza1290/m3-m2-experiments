@@ -1,0 +1,14 @@
+{
+  "total_eligible_cases": 8,
+  "mask_guided_roi": {
+    "DTAC_percent": 100.0,
+    "avg_m2_pixels": 1101.6,
+    "avg_m3_pixels": 833.1
+  },
+  "baseline_naive_roi": {
+    "DTAC_percent": 100.0,
+    "avg_m2_pixels": 1121.8,
+    "avg_m3_pixels": 838.9
+  },
+  "relative_dtac_gain_percent": 0.0
+}

@@ -1,0 +1,19 @@
+{
+  "dataset": "ToothFairy2 (labelsTr)",
+  "total_volumes_scanned": 15,
+  "total_eligible_pairs": 8,
+  "metrics": {
+    "ESR_percent": 100.0,
+    "DTAC_percent": 100.0,
+    "AR_percent": 100.0,
+    "CL_median_ms": 952.72,
+    "CL_p95_ms": 1390.22,
+    "CL_mean_ms": 1006.39
+  },
+  "denominators": {
+    "N_valid_eligible": 8,
+    "N_successful_crops": 8,
+    "N_dtac_passed": 8,
+    "N_reproducible": 8
+  }
+}

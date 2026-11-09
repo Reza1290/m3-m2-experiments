@@ -1,0 +1,9 @@
+case_id,quadrant,mg_slice,bl_slice,mg_dtac_pass,bl_dtac_pass,mg_m2_pixels,bl_m2_pixels,mg_m3_pixels,bl_m3_pixels,dmin_mm
+ToothFairy2F_008,maxillary_right,291,284,True,True,1151,1280,861,900,0.3
+ToothFairy2F_008,maxillary_left,128,130,True,True,1244,1263,867,922,0.424
+ToothFairy2F_009,maxillary_right,294,294,True,True,1165,1165,1257,1257,0.3
+ToothFairy2F_009,maxillary_left,135,135,True,True,1036,1036,1236,1236,0.424
+ToothFairy2F_010,maxillary_right,292,292,True,True,1108,1108,854,854,0.424
+ToothFairy2F_010,maxillary_left,136,134,True,True,1006,1139,1020,965,0.424
+ToothFairy2F_011,maxillary_right,338,331,True,True,1074,972,247,236,0.6
+ToothFairy2F_011,maxillary_left,180,185,True,True,1029,1011,323,341,0.671

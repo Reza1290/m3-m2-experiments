@@ -1,0 +1,721 @@
+case_id,m2_fdi,m3_fdi,ground_truth_id,ground_truth_name,predicted_id,predicted_name,is_correct,confidence,prob_contact,prob_independent,prob_resorption,triage_status
+ToothFairy2F_004,47,48,1,Independent,1,Independent,1,0.9094,0.0799,0.9094,0.0108,Prediction Meets Threshold
+ToothFairy2F_005,47,48,0,Contact,0,Contact,1,0.7975,0.7975,0.1893,0.0132,Prediction Meets Threshold
+ToothFairy2F_008,17,18,0,Contact,0,Contact,1,0.7352,0.7352,0.242,0.0228,Prediction Meets Threshold
+ToothFairy2F_008,27,28,0,Contact,0,Contact,1,0.6091,0.6091,0.2891,0.1018,Review Required
+ToothFairy2F_008,37,38,1,Independent,1,Independent,1,0.6123,0.3629,0.6123,0.0248,Review Required
+ToothFairy2F_008,47,48,1,Independent,1,Independent,1,0.7518,0.2253,0.7518,0.023,Prediction Meets Threshold
+ToothFairy2F_009,17,18,0,Contact,0,Contact,1,0.8252,0.8252,0.1353,0.0395,Prediction Meets Threshold
+ToothFairy2F_009,27,28,0,Contact,0,Contact,1,0.884,0.884,0.0942,0.0218,Prediction Meets Threshold
+ToothFairy2F_009,37,38,0,Contact,0,Contact,1,0.7379,0.7379,0.2212,0.0409,Prediction Meets Threshold
+ToothFairy2F_009,47,48,0,Contact,0,Contact,1,0.8682,0.8682,0.1128,0.019,Prediction Meets Threshold
+ToothFairy2F_010,17,18,0,Contact,0,Contact,1,0.6865,0.6865,0.237,0.0765,Review Required
+ToothFairy2F_010,27,28,0,Contact,0,Contact,1,0.6685,0.6685,0.2336,0.0979,Review Required
+ToothFairy2F_010,37,38,1,Independent,1,Independent,1,0.4933,0.4386,0.4933,0.0681,Review Required
+ToothFairy2F_010,47,48,1,Independent,0,Contact,0,0.6076,0.6076,0.3682,0.0242,Review Required
+ToothFairy2F_011,17,18,1,Independent,1,Independent,1,0.5486,0.3738,0.5486,0.0776,Review Required
+ToothFairy2F_011,27,28,1,Independent,0,Contact,0,0.5701,0.5701,0.3508,0.0791,Review Required
+ToothFairy2F_011,37,38,1,Independent,1,Independent,1,0.944,0.043,0.944,0.013,Prediction Meets Threshold
+ToothFairy2F_011,47,48,1,Independent,1,Independent,1,0.9676,0.0228,0.9676,0.0096,Prediction Meets Threshold
+ToothFairy2F_013,37,38,0,Contact,0,Contact,1,0.7371,0.7371,0.2322,0.0307,Prediction Meets Threshold
+ToothFairy2F_016,17,18,0,Contact,0,Contact,1,0.5984,0.5984,0.3504,0.0512,Review Required
+ToothFairy2F_016,27,28,0,Contact,0,Contact,1,0.8436,0.8436,0.148,0.0083,Prediction Meets Threshold
+ToothFairy2F_016,37,38,1,Independent,0,Contact,0,0.5571,0.5571,0.4243,0.0186,Review Required
+ToothFairy2F_018,37,38,1,Independent,1,Independent,1,0.8399,0.1266,0.8399,0.0335,Prediction Meets Threshold
+ToothFairy2F_020,37,38,0,Contact,0,Contact,1,0.7403,0.7403,0.2511,0.0087,Prediction Meets Threshold
+ToothFairy2F_020,47,48,0,Contact,0,Contact,1,0.7912,0.7912,0.207,0.0018,Prediction Meets Threshold
+ToothFairy2F_021,37,38,0,Contact,0,Contact,1,0.8965,0.8965,0.0934,0.0101,Prediction Meets Threshold
+ToothFairy2F_021,47,48,0,Contact,0,Contact,1,0.92,0.92,0.0761,0.0038,Prediction Meets Threshold
+ToothFairy2F_022,27,28,0,Contact,0,Contact,1,0.7906,0.7906,0.1777,0.0317,Prediction Meets Threshold
+ToothFairy2F_022,37,38,0,Contact,0,Contact,1,0.8192,0.8192,0.1251,0.0557,Prediction Meets Threshold
+ToothFairy2F_022,47,48,0,Contact,1,Independent,0,0.8163,0.1689,0.8163,0.0148,Prediction Meets Threshold
+ToothFairy2F_023,17,18,0,Contact,0,Contact,1,0.592,0.592,0.3592,0.0488,Review Required
+ToothFairy2F_023,27,28,1,Independent,0,Contact,0,0.5948,0.5948,0.3589,0.0464,Review Required
+ToothFairy2F_023,37,38,0,Contact,0,Contact,1,0.9166,0.9166,0.0693,0.014,Prediction Meets Threshold
+ToothFairy2F_023,47,48,0,Contact,0,Contact,1,0.904,0.904,0.0859,0.0101,Prediction Meets Threshold
+ToothFairy2F_025,37,38,0,Contact,0,Contact,1,0.8662,0.8662,0.1215,0.0123,Prediction Meets Threshold
+ToothFairy2F_026,17,18,1,Independent,0,Contact,0,0.4761,0.4761,0.4623,0.0616,Review Required
+ToothFairy2F_026,27,28,0,Contact,0,Contact,1,0.6816,0.6816,0.2716,0.0468,Review Required
+ToothFairy2F_026,37,38,0,Contact,0,Contact,1,0.6597,0.6597,0.3335,0.0068,Review Required
+ToothFairy2F_026,47,48,1,Independent,0,Contact,0,0.7486,0.7486,0.2337,0.0178,Prediction Meets Threshold
+ToothFairy2F_027,17,18,1,Independent,0,Contact,0,0.4819,0.4819,0.3851,0.133,Review Required
+ToothFairy2F_027,27,28,2,Resorption,0,Contact,0,0.4087,0.4087,0.3294,0.2619,Review Required
+ToothFairy2F_027,37,38,1,Independent,1,Independent,1,0.8355,0.154,0.8355,0.0105,Prediction Meets Threshold
+ToothFairy2F_027,47,48,0,Contact,1,Independent,0,0.5567,0.3647,0.5567,0.0786,Review Required
+ToothFairy2F_030,17,18,0,Contact,0,Contact,1,0.7745,0.7745,0.2048,0.0207,Prediction Meets Threshold
+ToothFairy2F_030,27,28,0,Contact,0,Contact,1,0.8479,0.8479,0.1452,0.007,Prediction Meets Threshold
+ToothFairy2F_030,37,38,0,Contact,0,Contact,1,0.7664,0.7664,0.2182,0.0155,Prediction Meets Threshold
+ToothFairy2F_031,17,18,0,Contact,0,Contact,1,0.68,0.68,0.296,0.024,Review Required
+ToothFairy2F_032,17,18,0,Contact,0,Contact,1,0.6427,0.6427,0.3006,0.0567,Review Required
+ToothFairy2F_032,27,28,0,Contact,0,Contact,1,0.6961,0.6961,0.2635,0.0404,Review Required
+ToothFairy2F_032,37,38,0,Contact,1,Independent,0,0.5464,0.4366,0.5464,0.017,Review Required
+ToothFairy2F_032,47,48,0,Contact,0,Contact,1,0.7905,0.7905,0.2024,0.0071,Prediction Meets Threshold
+ToothFairy2F_033,17,18,0,Contact,0,Contact,1,0.7974,0.7974,0.1705,0.0321,Prediction Meets Threshold
+ToothFairy2F_033,27,28,0,Contact,0,Contact,1,0.5244,0.5244,0.3759,0.0997,Review Required
+ToothFairy2F_033,37,38,2,Resorption,1,Independent,0,0.3883,0.2362,0.3883,0.3755,Review Required
+ToothFairy2F_034,17,18,1,Independent,0,Contact,0,0.8012,0.8012,0.1743,0.0245,Prediction Meets Threshold
+ToothFairy2F_034,27,28,1,Independent,0,Contact,0,0.9057,0.9057,0.0815,0.0128,Prediction Meets Threshold
+ToothFairy2F_034,37,38,0,Contact,0,Contact,1,0.6883,0.6883,0.295,0.0167,Review Required
+ToothFairy2F_034,47,48,0,Contact,0,Contact,1,0.8994,0.8994,0.0806,0.0199,Prediction Meets Threshold
+ToothFairy2F_036,27,28,0,Contact,0,Contact,1,0.6818,0.6818,0.2838,0.0344,Review Required
+ToothFairy2F_036,37,38,1,Independent,1,Independent,1,0.8441,0.136,0.8441,0.0199,Prediction Meets Threshold
+ToothFairy2F_036,47,48,0,Contact,0,Contact,1,0.8729,0.8729,0.1219,0.0052,Prediction Meets Threshold
+ToothFairy2F_037,27,28,1,Independent,0,Contact,0,0.5561,0.5561,0.38,0.0639,Review Required
+ToothFairy2F_037,37,38,0,Contact,0,Contact,1,0.6173,0.6173,0.3462,0.0364,Review Required
+ToothFairy2F_039,17,18,0,Contact,0,Contact,1,0.7213,0.7213,0.2138,0.0649,Prediction Meets Threshold
+ToothFairy2F_039,37,38,0,Contact,0,Contact,1,0.8247,0.8247,0.1694,0.0059,Prediction Meets Threshold
+ToothFairy2F_040,37,38,0,Contact,1,Independent,0,0.5671,0.4069,0.5671,0.0261,Review Required
+ToothFairy2F_040,47,48,1,Independent,1,Independent,1,0.9205,0.066,0.9205,0.0135,Prediction Meets Threshold
+ToothFairy2F_041,27,28,0,Contact,0,Contact,1,0.6139,0.6139,0.2988,0.0873,Review Required
+ToothFairy2F_041,37,38,1,Independent,1,Independent,1,0.9571,0.0319,0.9571,0.011,Prediction Meets Threshold
+ToothFairy2F_044,27,28,1,Independent,0,Contact,0,0.5053,0.5053,0.4564,0.0382,Review Required
+ToothFairy2F_044,47,48,0,Contact,0,Contact,1,0.797,0.797,0.1883,0.0147,Prediction Meets Threshold
+ToothFairy2F_046,37,38,1,Independent,1,Independent,1,0.9204,0.0682,0.9204,0.0115,Prediction Meets Threshold
+ToothFairy2F_048,17,18,0,Contact,0,Contact,1,0.7657,0.7657,0.2165,0.0178,Prediction Meets Threshold
+ToothFairy2F_048,47,48,1,Independent,0,Contact,0,0.6917,0.6917,0.2254,0.083,Review Required
+ToothFairy2F_049,27,28,0,Contact,0,Contact,1,0.8069,0.8069,0.1815,0.0116,Prediction Meets Threshold
+ToothFairy2F_049,47,48,0,Contact,0,Contact,1,0.9314,0.9314,0.0614,0.0073,Prediction Meets Threshold
+ToothFairy2F_050,17,18,1,Independent,0,Contact,0,0.5624,0.5624,0.3174,0.1202,Review Required
+ToothFairy2F_050,27,28,0,Contact,0,Contact,1,0.8281,0.8281,0.1576,0.0143,Prediction Meets Threshold
+ToothFairy2F_050,37,38,0,Contact,0,Contact,1,0.8666,0.8666,0.1294,0.0041,Prediction Meets Threshold
+ToothFairy2F_050,47,48,0,Contact,0,Contact,1,0.7795,0.7795,0.2158,0.0047,Prediction Meets Threshold
+ToothFairy2F_051,17,18,0,Contact,0,Contact,1,0.8468,0.8468,0.1253,0.0279,Prediction Meets Threshold
+ToothFairy2F_051,27,28,0,Contact,0,Contact,1,0.6446,0.6446,0.2728,0.0826,Review Required
+ToothFairy2F_051,37,38,0,Contact,0,Contact,1,0.8043,0.8043,0.1712,0.0244,Prediction Meets Threshold
+ToothFairy2F_051,47,48,0,Contact,0,Contact,1,0.7354,0.7354,0.2299,0.0346,Prediction Meets Threshold
+ToothFairy2F_052,17,18,0,Contact,0,Contact,1,0.6376,0.6376,0.2882,0.0743,Review Required
+ToothFairy2F_052,37,38,1,Independent,1,Independent,1,0.9539,0.0397,0.9539,0.0064,Prediction Meets Threshold
+ToothFairy2F_053,37,38,0,Contact,0,Contact,1,0.8685,0.8685,0.1189,0.0126,Prediction Meets Threshold
+ToothFairy2F_053,47,48,1,Independent,0,Contact,0,0.7507,0.7507,0.2411,0.0082,Prediction Meets Threshold
+ToothFairy2F_054,27,28,0,Contact,0,Contact,1,0.6792,0.6792,0.2807,0.0402,Review Required
+ToothFairy2F_054,37,38,0,Contact,0,Contact,1,0.7543,0.7543,0.2053,0.0403,Prediction Meets Threshold
+ToothFairy2F_054,47,48,0,Contact,0,Contact,1,0.7891,0.7891,0.2027,0.0082,Prediction Meets Threshold
+ToothFairy2F_055,17,18,0,Contact,0,Contact,1,0.6744,0.6744,0.2811,0.0444,Review Required
+ToothFairy2F_055,27,28,0,Contact,0,Contact,1,0.5832,0.5832,0.3171,0.0997,Review Required
+ToothFairy2F_055,37,38,1,Independent,1,Independent,1,0.8771,0.0829,0.8771,0.04,Prediction Meets Threshold
+ToothFairy2F_055,47,48,1,Independent,1,Independent,1,0.9071,0.0641,0.9071,0.0288,Prediction Meets Threshold
+ToothFairy2F_057,17,18,0,Contact,0,Contact,1,0.8976,0.8976,0.0951,0.0073,Prediction Meets Threshold
+ToothFairy2F_057,27,28,0,Contact,0,Contact,1,0.8332,0.8332,0.1599,0.0069,Prediction Meets Threshold
+ToothFairy2F_057,37,38,0,Contact,0,Contact,1,0.906,0.906,0.0758,0.0182,Prediction Meets Threshold
+ToothFairy2F_057,47,48,0,Contact,0,Contact,1,0.9346,0.9346,0.0604,0.0051,Prediction Meets Threshold
+ToothFairy2F_058,17,18,0,Contact,0,Contact,1,0.682,0.682,0.2884,0.0296,Review Required
+ToothFairy2F_058,27,28,1,Independent,1,Independent,1,0.6084,0.356,0.6084,0.0356,Review Required
+ToothFairy2F_058,37,38,0,Contact,0,Contact,1,0.9271,0.9271,0.0678,0.0052,Prediction Meets Threshold
+ToothFairy2F_058,47,48,1,Independent,1,Independent,1,0.8683,0.1252,0.8683,0.0065,Prediction Meets Threshold
+ToothFairy2F_059,37,38,1,Independent,1,Independent,1,0.6609,0.3257,0.6609,0.0134,Review Required
+ToothFairy2F_060,37,38,0,Contact,0,Contact,1,0.9176,0.9176,0.0761,0.0062,Prediction Meets Threshold
+ToothFairy2F_060,47,48,0,Contact,0,Contact,1,0.7493,0.7493,0.2429,0.0078,Prediction Meets Threshold
+ToothFairy2F_062,27,28,0,Contact,0,Contact,1,0.803,0.803,0.1539,0.0431,Prediction Meets Threshold
+ToothFairy2F_062,37,38,0,Contact,0,Contact,1,0.9052,0.9052,0.0883,0.0065,Prediction Meets Threshold
+ToothFairy2F_063,47,48,0,Contact,0,Contact,1,0.6794,0.6794,0.3004,0.0202,Review Required
+ToothFairy2F_064,17,18,0,Contact,0,Contact,1,0.7634,0.7634,0.1691,0.0675,Prediction Meets Threshold
+ToothFairy2F_064,27,28,0,Contact,0,Contact,1,0.7463,0.7463,0.2147,0.039,Prediction Meets Threshold
+ToothFairy2F_064,37,38,0,Contact,0,Contact,1,0.8962,0.8962,0.0936,0.0102,Prediction Meets Threshold
+ToothFairy2F_064,47,48,1,Independent,1,Independent,1,0.591,0.3713,0.591,0.0377,Review Required
+ToothFairy2F_065,27,28,0,Contact,0,Contact,1,0.6828,0.6828,0.2814,0.0359,Review Required
+ToothFairy2F_065,47,48,0,Contact,0,Contact,1,0.7787,0.7787,0.2162,0.0051,Prediction Meets Threshold
+ToothFairy2F_067,17,18,1,Independent,1,Independent,1,0.5898,0.3841,0.5898,0.0261,Review Required
+ToothFairy2P_001,37,38,0,Contact,0,Contact,1,0.8005,0.8005,0.1663,0.0332,Prediction Meets Threshold
+ToothFairy2P_001,47,48,0,Contact,0,Contact,1,0.7505,0.7505,0.2148,0.0347,Prediction Meets Threshold
+ToothFairy2P_002,37,38,1,Independent,1,Independent,1,0.9024,0.0849,0.9024,0.0127,Prediction Meets Threshold
+ToothFairy2P_002,47,48,1,Independent,1,Independent,1,0.9497,0.0443,0.9497,0.006,Prediction Meets Threshold
+ToothFairy2P_004,17,18,0,Contact,0,Contact,1,0.8443,0.8443,0.1335,0.0222,Prediction Meets Threshold
+ToothFairy2P_004,27,28,0,Contact,0,Contact,1,0.9397,0.9397,0.0568,0.0035,Prediction Meets Threshold
+ToothFairy2P_004,37,38,1,Independent,0,Contact,0,0.7561,0.7561,0.2275,0.0163,Prediction Meets Threshold
+ToothFairy2P_004,47,48,0,Contact,0,Contact,1,0.7668,0.7668,0.2105,0.0228,Prediction Meets Threshold
+ToothFairy2P_005,37,38,1,Independent,1,Independent,1,0.8927,0.079,0.8927,0.0283,Prediction Meets Threshold
+ToothFairy2P_005,47,48,1,Independent,1,Independent,1,0.9377,0.0525,0.9377,0.0099,Prediction Meets Threshold
+ToothFairy2P_006,37,38,1,Independent,1,Independent,1,0.49,0.2718,0.49,0.2382,Review Required
+ToothFairy2P_006,47,48,0,Contact,0,Contact,1,0.6319,0.6319,0.3199,0.0482,Review Required
+ToothFairy2P_007,17,18,0,Contact,0,Contact,1,0.5078,0.5078,0.4447,0.0474,Review Required
+ToothFairy2P_007,27,28,0,Contact,0,Contact,1,0.5835,0.5835,0.3566,0.0599,Review Required
+ToothFairy2P_007,37,38,1,Independent,1,Independent,1,0.7526,0.1817,0.7526,0.0657,Prediction Meets Threshold
+ToothFairy2P_008,17,18,1,Independent,1,Independent,1,0.7815,0.1697,0.7815,0.0488,Prediction Meets Threshold
+ToothFairy2P_008,27,28,1,Independent,1,Independent,1,0.7335,0.1941,0.7335,0.0724,Prediction Meets Threshold
+ToothFairy2P_008,37,38,0,Contact,0,Contact,1,0.4412,0.4412,0.405,0.1538,Review Required
+ToothFairy2P_008,47,48,1,Independent,1,Independent,1,0.7221,0.1764,0.7221,0.1015,Prediction Meets Threshold
+ToothFairy2P_009,17,18,1,Independent,1,Independent,1,0.5205,0.4536,0.5205,0.0259,Review Required
+ToothFairy2P_012,27,28,1,Independent,1,Independent,1,0.6622,0.278,0.6622,0.0598,Review Required
+ToothFairy2P_012,37,38,0,Contact,1,Independent,0,0.5349,0.3923,0.5349,0.0728,Review Required
+ToothFairy2P_012,47,48,0,Contact,1,Independent,0,0.5874,0.3125,0.5874,0.1001,Review Required
+ToothFairy2P_015,37,38,1,Independent,0,Contact,0,0.6074,0.6074,0.3785,0.0141,Review Required
+ToothFairy2P_015,47,48,1,Independent,0,Contact,0,0.5764,0.5764,0.4106,0.013,Review Required
+ToothFairy2P_017,37,38,1,Independent,1,Independent,1,0.7302,0.2352,0.7302,0.0346,Prediction Meets Threshold
+ToothFairy2P_017,47,48,1,Independent,0,Contact,0,0.5435,0.5435,0.3937,0.0629,Review Required
+ToothFairy2P_018,17,18,1,Independent,1,Independent,1,0.653,0.2212,0.653,0.1259,Review Required
+ToothFairy2P_018,27,28,1,Independent,1,Independent,1,0.8015,0.1314,0.8015,0.0671,Prediction Meets Threshold
+ToothFairy2P_018,37,38,1,Independent,1,Independent,1,0.8914,0.0676,0.8914,0.0409,Prediction Meets Threshold
+ToothFairy2P_018,47,48,1,Independent,1,Independent,1,0.8475,0.1055,0.8475,0.047,Prediction Meets Threshold
+ToothFairy2P_021,17,18,0,Contact,0,Contact,1,0.7636,0.7636,0.2065,0.0299,Prediction Meets Threshold
+ToothFairy2P_021,27,28,1,Independent,1,Independent,1,0.577,0.3691,0.577,0.0539,Review Required
+ToothFairy2P_021,37,38,0,Contact,0,Contact,1,0.8231,0.8231,0.1542,0.0227,Prediction Meets Threshold
+ToothFairy2P_021,47,48,0,Contact,0,Contact,1,0.4574,0.4574,0.3395,0.2032,Review Required
+ToothFairy2P_023,37,38,2,Resorption,1,Independent,0,0.4681,0.4034,0.4681,0.1285,Review Required
+ToothFairy2P_023,47,48,0,Contact,0,Contact,1,0.7436,0.7436,0.2069,0.0495,Prediction Meets Threshold
+ToothFairy2P_025,17,18,0,Contact,0,Contact,1,0.5064,0.5064,0.4072,0.0864,Review Required
+ToothFairy2P_025,27,28,0,Contact,1,Independent,0,0.4929,0.4535,0.4929,0.0536,Review Required
+ToothFairy2P_025,37,38,1,Independent,0,Contact,0,0.5805,0.5805,0.367,0.0526,Review Required
+ToothFairy2P_025,47,48,1,Independent,0,Contact,0,0.835,0.835,0.1442,0.0208,Prediction Meets Threshold
+ToothFairy2P_027,17,18,0,Contact,0,Contact,1,0.799,0.799,0.1829,0.0181,Prediction Meets Threshold
+ToothFairy2P_027,27,28,0,Contact,0,Contact,1,0.8054,0.8054,0.1807,0.0139,Prediction Meets Threshold
+ToothFairy2P_027,37,38,0,Contact,0,Contact,1,0.8443,0.8443,0.1299,0.0258,Prediction Meets Threshold
+ToothFairy2P_027,47,48,1,Independent,1,Independent,1,0.8901,0.089,0.8901,0.0209,Prediction Meets Threshold
+ToothFairy2P_028,37,38,1,Independent,1,Independent,1,0.8685,0.0992,0.8685,0.0322,Prediction Meets Threshold
+ToothFairy2P_028,47,48,1,Independent,1,Independent,1,0.9004,0.0785,0.9004,0.0211,Prediction Meets Threshold
+ToothFairy2P_029,17,18,1,Independent,1,Independent,1,0.5872,0.3413,0.5872,0.0714,Review Required
+ToothFairy2P_029,27,28,1,Independent,0,Contact,0,0.5071,0.5071,0.4341,0.0589,Review Required
+ToothFairy2P_029,37,38,0,Contact,1,Independent,0,0.7496,0.1977,0.7496,0.0527,Prediction Meets Threshold
+ToothFairy2P_033,37,38,0,Contact,1,Independent,0,0.6624,0.2509,0.6624,0.0867,Review Required
+ToothFairy2P_033,47,48,1,Independent,1,Independent,1,0.6918,0.2262,0.6918,0.082,Review Required
+ToothFairy2P_035,47,48,1,Independent,1,Independent,1,0.7061,0.2458,0.7061,0.0481,Prediction Meets Threshold
+ToothFairy2P_037,17,18,0,Contact,0,Contact,1,0.4928,0.4928,0.4714,0.0358,Review Required
+ToothFairy2P_037,27,28,0,Contact,0,Contact,1,0.5912,0.5912,0.3357,0.0732,Review Required
+ToothFairy2P_037,37,38,1,Independent,1,Independent,1,0.6379,0.2957,0.6379,0.0664,Review Required
+ToothFairy2P_037,47,48,1,Independent,1,Independent,1,0.5538,0.3385,0.5538,0.1077,Review Required
+ToothFairy2P_039,17,18,0,Contact,0,Contact,1,0.8464,0.8464,0.1351,0.0184,Prediction Meets Threshold
+ToothFairy2P_039,27,28,1,Independent,1,Independent,1,0.62,0.1953,0.62,0.1847,Review Required
+ToothFairy2P_039,47,48,0,Contact,0,Contact,1,0.431,0.431,0.3644,0.2046,Review Required
+ToothFairy2P_041,37,38,1,Independent,1,Independent,1,0.9267,0.0567,0.9267,0.0166,Prediction Meets Threshold
+ToothFairy2P_041,47,48,1,Independent,1,Independent,1,0.8382,0.1172,0.8382,0.0447,Prediction Meets Threshold
+ToothFairy2P_045,17,18,0,Contact,0,Contact,1,0.715,0.715,0.2651,0.0199,Prediction Meets Threshold
+ToothFairy2P_045,27,28,0,Contact,0,Contact,1,0.8271,0.8271,0.149,0.024,Prediction Meets Threshold
+ToothFairy2P_045,37,38,0,Contact,0,Contact,1,0.8817,0.8817,0.1035,0.0148,Prediction Meets Threshold
+ToothFairy2P_046,27,28,0,Contact,0,Contact,1,0.6283,0.6283,0.343,0.0287,Review Required
+ToothFairy2P_046,47,48,1,Independent,1,Independent,1,0.6632,0.2525,0.6632,0.0843,Review Required
+ToothFairy2P_048,17,18,0,Contact,0,Contact,1,0.7803,0.7803,0.2088,0.0109,Prediction Meets Threshold
+ToothFairy2P_048,27,28,1,Independent,1,Independent,1,0.5566,0.3712,0.5566,0.0723,Review Required
+ToothFairy2P_048,37,38,0,Contact,0,Contact,1,0.6966,0.6966,0.2765,0.0269,Review Required
+ToothFairy2P_049,47,48,1,Independent,1,Independent,1,0.5115,0.4559,0.5115,0.0326,Review Required
+ToothFairy2P_055,37,38,1,Independent,1,Independent,1,0.795,0.1773,0.795,0.0277,Prediction Meets Threshold
+ToothFairy2P_055,47,48,0,Contact,1,Independent,0,0.8093,0.1701,0.8093,0.0206,Prediction Meets Threshold
+ToothFairy2P_057,17,18,1,Independent,1,Independent,1,0.8086,0.13,0.8086,0.0614,Prediction Meets Threshold
+ToothFairy2P_057,27,28,1,Independent,1,Independent,1,0.7243,0.1788,0.7243,0.0968,Prediction Meets Threshold
+ToothFairy2P_057,37,38,1,Independent,1,Independent,1,0.8106,0.1712,0.8106,0.0182,Prediction Meets Threshold
+ToothFairy2P_057,47,48,1,Independent,1,Independent,1,0.5079,0.2543,0.5079,0.2378,Review Required
+ToothFairy2P_058,17,18,0,Contact,0,Contact,1,0.7237,0.7237,0.2568,0.0195,Prediction Meets Threshold
+ToothFairy2P_058,27,28,0,Contact,0,Contact,1,0.8086,0.8086,0.1795,0.0119,Prediction Meets Threshold
+ToothFairy2P_058,37,38,0,Contact,0,Contact,1,0.8183,0.8183,0.1558,0.0259,Prediction Meets Threshold
+ToothFairy2P_058,47,48,0,Contact,0,Contact,1,0.7859,0.7859,0.1787,0.0354,Prediction Meets Threshold
+ToothFairy2P_059,47,48,1,Independent,1,Independent,1,0.8732,0.1148,0.8732,0.012,Prediction Meets Threshold
+ToothFairy2P_061,17,18,0,Contact,0,Contact,1,0.8679,0.8679,0.1233,0.0088,Prediction Meets Threshold
+ToothFairy2P_061,37,38,1,Independent,0,Contact,0,0.5436,0.5436,0.3722,0.0842,Review Required
+ToothFairy2P_061,47,48,0,Contact,0,Contact,1,0.9334,0.9334,0.0591,0.0075,Prediction Meets Threshold
+ToothFairy2P_066,37,38,0,Contact,0,Contact,1,0.7903,0.7903,0.1596,0.0501,Prediction Meets Threshold
+ToothFairy2P_066,47,48,1,Independent,1,Independent,1,0.5923,0.3409,0.5923,0.0668,Review Required
+ToothFairy2P_067,17,18,0,Contact,0,Contact,1,0.8482,0.8482,0.1297,0.0222,Prediction Meets Threshold
+ToothFairy2P_067,47,48,1,Independent,1,Independent,1,0.828,0.1323,0.828,0.0397,Prediction Meets Threshold
+ToothFairy2P_070,17,18,0,Contact,0,Contact,1,0.8823,0.8823,0.1056,0.0121,Prediction Meets Threshold
+ToothFairy2P_070,27,28,0,Contact,0,Contact,1,0.9206,0.9206,0.0704,0.009,Prediction Meets Threshold
+ToothFairy2P_070,37,38,1,Independent,0,Contact,0,0.5892,0.5892,0.3262,0.0846,Review Required
+ToothFairy2P_070,47,48,0,Contact,0,Contact,1,0.8201,0.8201,0.1517,0.0282,Prediction Meets Threshold
+ToothFairy2P_071,17,18,0,Contact,0,Contact,1,0.8093,0.8093,0.1627,0.028,Prediction Meets Threshold
+ToothFairy2P_071,27,28,1,Independent,0,Contact,0,0.7814,0.7814,0.2024,0.0163,Prediction Meets Threshold
+ToothFairy2P_071,37,38,0,Contact,0,Contact,1,0.6511,0.6511,0.2766,0.0722,Review Required
+ToothFairy2P_071,47,48,0,Contact,0,Contact,1,0.7428,0.7428,0.2243,0.0328,Prediction Meets Threshold
+ToothFairy2P_075,17,18,1,Independent,0,Contact,0,0.524,0.524,0.3926,0.0833,Review Required
+ToothFairy2P_075,27,28,0,Contact,0,Contact,1,0.8234,0.8234,0.1583,0.0183,Prediction Meets Threshold
+ToothFairy2P_075,37,38,0,Contact,0,Contact,1,0.7956,0.7956,0.1917,0.0127,Prediction Meets Threshold
+ToothFairy2P_075,47,48,1,Independent,1,Independent,1,0.9423,0.0483,0.9423,0.0094,Prediction Meets Threshold
+ToothFairy2P_081,17,18,0,Contact,0,Contact,1,0.7713,0.7713,0.2031,0.0257,Prediction Meets Threshold
+ToothFairy2P_081,27,28,1,Independent,0,Contact,0,0.8116,0.8116,0.166,0.0224,Prediction Meets Threshold
+ToothFairy2P_081,37,38,0,Contact,0,Contact,1,0.8518,0.8518,0.1302,0.018,Prediction Meets Threshold
+ToothFairy2P_081,47,48,0,Contact,0,Contact,1,0.6998,0.6998,0.2459,0.0543,Review Required
+ToothFairy2P_082,37,38,1,Independent,1,Independent,1,0.5504,0.3627,0.5504,0.0869,Review Required
+ToothFairy2P_084,17,18,0,Contact,0,Contact,1,0.5582,0.5582,0.4036,0.0382,Review Required
+ToothFairy2P_084,27,28,0,Contact,0,Contact,1,0.4974,0.4974,0.3313,0.1713,Review Required
+ToothFairy2P_084,37,38,0,Contact,0,Contact,1,0.6608,0.6608,0.2886,0.0506,Review Required
+ToothFairy2P_084,47,48,1,Independent,1,Independent,1,0.5796,0.3825,0.5796,0.0379,Review Required
+ToothFairy2P_086,17,18,0,Contact,1,Independent,0,0.4896,0.3916,0.4896,0.1189,Review Required
+ToothFairy2P_086,27,28,2,Resorption,1,Independent,0,0.4774,0.2115,0.4774,0.3112,Review Required
+ToothFairy2P_086,37,38,1,Independent,1,Independent,1,0.4896,0.4346,0.4896,0.0758,Review Required
+ToothFairy2P_086,47,48,2,Resorption,1,Independent,0,0.4593,0.26,0.4593,0.2807,Review Required
+ToothFairy2P_087,37,38,0,Contact,0,Contact,1,0.5746,0.5746,0.4,0.0255,Review Required
+ToothFairy2P_088,17,18,1,Independent,1,Independent,1,0.4843,0.4169,0.4843,0.0987,Review Required
+ToothFairy2P_088,27,28,1,Independent,1,Independent,1,0.7816,0.1909,0.7816,0.0274,Prediction Meets Threshold
+ToothFairy2P_088,37,38,0,Contact,0,Contact,1,0.5436,0.5436,0.4424,0.014,Review Required
+ToothFairy2P_088,47,48,1,Independent,1,Independent,1,0.7004,0.2664,0.7004,0.0332,Prediction Meets Threshold
+ToothFairy2P_091,17,18,0,Contact,1,Independent,0,0.4649,0.405,0.4649,0.1301,Review Required
+ToothFairy2P_091,27,28,1,Independent,1,Independent,1,0.4871,0.3772,0.4871,0.1357,Review Required
+ToothFairy2P_091,37,38,1,Independent,1,Independent,1,0.5073,0.3238,0.5073,0.1689,Review Required
+ToothFairy2P_092,37,38,1,Independent,1,Independent,1,0.8489,0.1258,0.8489,0.0254,Prediction Meets Threshold
+ToothFairy2P_093,17,18,0,Contact,0,Contact,1,0.6577,0.6577,0.2928,0.0494,Review Required
+ToothFairy2P_093,27,28,0,Contact,0,Contact,1,0.7457,0.7457,0.235,0.0194,Prediction Meets Threshold
+ToothFairy2P_093,37,38,0,Contact,1,Independent,0,0.768,0.1601,0.768,0.0719,Prediction Meets Threshold
+ToothFairy2P_093,47,48,0,Contact,0,Contact,1,0.4923,0.4923,0.3934,0.1143,Review Required
+ToothFairy2P_094,17,18,0,Contact,0,Contact,1,0.7175,0.7175,0.2172,0.0653,Prediction Meets Threshold
+ToothFairy2P_094,27,28,0,Contact,0,Contact,1,0.6219,0.6219,0.2967,0.0814,Review Required
+ToothFairy2P_094,37,38,0,Contact,0,Contact,1,0.5683,0.5683,0.3792,0.0526,Review Required
+ToothFairy2P_094,47,48,0,Contact,0,Contact,1,0.6921,0.6921,0.2833,0.0246,Review Required
+ToothFairy2P_096,37,38,1,Independent,1,Independent,1,0.9265,0.0596,0.9265,0.014,Prediction Meets Threshold
+ToothFairy2P_096,47,48,1,Independent,1,Independent,1,0.9236,0.0602,0.9236,0.0162,Prediction Meets Threshold
+ToothFairy2P_097,37,38,0,Contact,0,Contact,1,0.778,0.778,0.2115,0.0105,Prediction Meets Threshold
+ToothFairy2P_097,47,48,0,Contact,0,Contact,1,0.9248,0.9248,0.0715,0.0037,Prediction Meets Threshold
+ToothFairy2P_100,37,38,1,Independent,1,Independent,1,0.7053,0.2415,0.7053,0.0532,Prediction Meets Threshold
+ToothFairy2P_100,47,48,0,Contact,0,Contact,1,0.7543,0.7543,0.2227,0.0229,Prediction Meets Threshold
+ToothFairy2P_101,27,28,0,Contact,1,Independent,0,0.5281,0.3875,0.5281,0.0844,Review Required
+ToothFairy2P_101,37,38,0,Contact,1,Independent,0,0.5004,0.4291,0.5004,0.0705,Review Required
+ToothFairy2P_101,47,48,1,Independent,0,Contact,0,0.5856,0.5856,0.3912,0.0232,Review Required
+ToothFairy2P_103,27,28,2,Resorption,2,Resorption,1,0.3837,0.252,0.3643,0.3837,Review Required
+ToothFairy2P_103,37,38,1,Independent,1,Independent,1,0.467,0.2401,0.467,0.2929,Review Required
+ToothFairy2P_105,27,28,1,Independent,1,Independent,1,0.6876,0.2526,0.6876,0.0598,Review Required
+ToothFairy2P_105,37,38,0,Contact,1,Independent,0,0.5297,0.3389,0.5297,0.1314,Review Required
+ToothFairy2P_106,37,38,1,Independent,1,Independent,1,0.5463,0.4254,0.5463,0.0283,Review Required
+ToothFairy2P_106,47,48,1,Independent,1,Independent,1,0.8751,0.1118,0.8751,0.013,Prediction Meets Threshold
+ToothFairy2P_107,47,48,1,Independent,0,Contact,0,0.6625,0.6625,0.3148,0.0228,Review Required
+ToothFairy2P_109,37,38,0,Contact,0,Contact,1,0.8605,0.8605,0.1314,0.0081,Prediction Meets Threshold
+ToothFairy2P_109,47,48,0,Contact,0,Contact,1,0.896,0.896,0.0915,0.0125,Prediction Meets Threshold
+ToothFairy2P_110,27,28,0,Contact,0,Contact,1,0.9494,0.9494,0.0458,0.0048,Prediction Meets Threshold
+ToothFairy2P_110,37,38,0,Contact,0,Contact,1,0.8826,0.8826,0.0949,0.0225,Prediction Meets Threshold
+ToothFairy2P_112,17,18,1,Independent,1,Independent,1,0.5908,0.2727,0.5908,0.1365,Review Required
+ToothFairy2P_112,37,38,1,Independent,1,Independent,1,0.5404,0.3854,0.5404,0.0743,Review Required
+ToothFairy2P_112,47,48,0,Contact,0,Contact,1,0.6085,0.6085,0.3381,0.0534,Review Required
+ToothFairy2P_114,17,18,0,Contact,0,Contact,1,0.6109,0.6109,0.3421,0.047,Review Required
+ToothFairy2P_114,27,28,0,Contact,0,Contact,1,0.604,0.604,0.3596,0.0364,Review Required
+ToothFairy2P_114,37,38,1,Independent,1,Independent,1,0.6855,0.2693,0.6855,0.0452,Review Required
+ToothFairy2P_114,47,48,1,Independent,1,Independent,1,0.7459,0.2069,0.7459,0.0472,Prediction Meets Threshold
+ToothFairy2P_115,17,18,0,Contact,0,Contact,1,0.5845,0.5845,0.3997,0.0158,Review Required
+ToothFairy2P_116,47,48,0,Contact,0,Contact,1,0.5817,0.5817,0.3948,0.0234,Review Required
+ToothFairy2P_117,37,38,0,Contact,0,Contact,1,0.8554,0.8554,0.1303,0.0142,Prediction Meets Threshold
+ToothFairy2P_117,47,48,0,Contact,0,Contact,1,0.9066,0.9066,0.0817,0.0116,Prediction Meets Threshold
+ToothFairy2P_118,37,38,1,Independent,1,Independent,1,0.856,0.1223,0.856,0.0217,Prediction Meets Threshold
+ToothFairy2P_120,47,48,0,Contact,0,Contact,1,0.5817,0.5817,0.3948,0.0234,Review Required
+ToothFairy2P_121,37,38,0,Contact,0,Contact,1,0.8554,0.8554,0.1303,0.0142,Prediction Meets Threshold
+ToothFairy2P_121,47,48,0,Contact,0,Contact,1,0.9066,0.9066,0.0817,0.0116,Prediction Meets Threshold
+ToothFairy2P_124,37,38,1,Independent,1,Independent,1,0.796,0.1604,0.796,0.0435,Prediction Meets Threshold
+ToothFairy2P_124,47,48,0,Contact,0,Contact,1,0.5788,0.5788,0.4068,0.0144,Review Required
+ToothFairy2P_125,47,48,0,Contact,0,Contact,1,0.7507,0.7507,0.2318,0.0175,Prediction Meets Threshold
+ToothFairy2P_126,27,28,1,Independent,1,Independent,1,0.6363,0.3411,0.6363,0.0226,Review Required
+ToothFairy2P_127,37,38,1,Independent,1,Independent,1,0.8384,0.0955,0.8384,0.0661,Prediction Meets Threshold
+ToothFairy2P_127,47,48,1,Independent,1,Independent,1,0.8999,0.077,0.8999,0.023,Prediction Meets Threshold
+ToothFairy2P_128,27,28,1,Independent,1,Independent,1,0.758,0.2157,0.758,0.0263,Prediction Meets Threshold
+ToothFairy2P_128,37,38,0,Contact,0,Contact,1,0.6781,0.6781,0.2797,0.0422,Review Required
+ToothFairy2P_128,47,48,0,Contact,1,Independent,0,0.628,0.3017,0.628,0.0703,Review Required
+ToothFairy2P_129,17,18,0,Contact,0,Contact,1,0.8658,0.8658,0.1189,0.0153,Prediction Meets Threshold
+ToothFairy2P_129,27,28,1,Independent,1,Independent,1,0.4913,0.4803,0.4913,0.0283,Review Required
+ToothFairy2P_129,37,38,1,Independent,1,Independent,1,0.7005,0.2511,0.7005,0.0484,Prediction Meets Threshold
+ToothFairy2P_129,47,48,0,Contact,0,Contact,1,0.9201,0.9201,0.072,0.0079,Prediction Meets Threshold
+ToothFairy2P_130,47,48,0,Contact,0,Contact,1,0.6798,0.6798,0.3013,0.0189,Review Required
+ToothFairy2P_133,37,38,0,Contact,0,Contact,1,0.7397,0.7397,0.2425,0.0179,Prediction Meets Threshold
+ToothFairy2P_135,37,38,0,Contact,0,Contact,1,0.8761,0.8761,0.1201,0.0038,Prediction Meets Threshold
+ToothFairy2P_135,47,48,0,Contact,0,Contact,1,0.9024,0.9024,0.0904,0.0072,Prediction Meets Threshold
+ToothFairy2P_137,47,48,0,Contact,0,Contact,1,0.7381,0.7381,0.2329,0.0289,Prediction Meets Threshold
+ToothFairy2P_141,17,18,0,Contact,0,Contact,1,0.7498,0.7498,0.2218,0.0284,Prediction Meets Threshold
+ToothFairy2P_141,27,28,0,Contact,0,Contact,1,0.485,0.485,0.431,0.084,Review Required
+ToothFairy2P_142,17,18,0,Contact,0,Contact,1,0.6739,0.6739,0.2963,0.0298,Review Required
+ToothFairy2P_142,27,28,0,Contact,0,Contact,1,0.5472,0.5472,0.3736,0.0792,Review Required
+ToothFairy2P_142,37,38,0,Contact,1,Independent,0,0.6144,0.271,0.6144,0.1146,Review Required
+ToothFairy2P_142,47,48,0,Contact,1,Independent,0,0.6151,0.2576,0.6151,0.1273,Review Required
+ToothFairy2P_143,37,38,1,Independent,1,Independent,1,0.7567,0.1841,0.7567,0.0592,Prediction Meets Threshold
+ToothFairy2P_143,47,48,1,Independent,1,Independent,1,0.8199,0.1358,0.8199,0.0444,Prediction Meets Threshold
+ToothFairy2P_147,47,48,1,Independent,1,Independent,1,0.8343,0.15,0.8343,0.0157,Prediction Meets Threshold
+ToothFairy2P_148,37,38,1,Independent,1,Independent,1,0.7308,0.2454,0.7308,0.0238,Prediction Meets Threshold
+ToothFairy2P_148,47,48,0,Contact,0,Contact,1,0.9359,0.9359,0.0633,0.0008,Prediction Meets Threshold
+ToothFairy2P_150,37,38,1,Independent,0,Contact,0,0.656,0.656,0.3041,0.0399,Review Required
+ToothFairy2P_150,47,48,0,Contact,0,Contact,1,0.713,0.713,0.2694,0.0175,Prediction Meets Threshold
+ToothFairy2P_151,37,38,1,Independent,0,Contact,0,0.4736,0.4736,0.4003,0.126,Review Required
+ToothFairy2P_191,17,18,0,Contact,0,Contact,1,0.8311,0.8311,0.1411,0.0278,Prediction Meets Threshold
+ToothFairy2P_191,27,28,0,Contact,0,Contact,1,0.7041,0.7041,0.2481,0.0478,Prediction Meets Threshold
+ToothFairy2P_191,37,38,1,Independent,0,Contact,0,0.5442,0.5442,0.4038,0.052,Review Required
+ToothFairy2P_191,47,48,0,Contact,0,Contact,1,0.7471,0.7471,0.1849,0.068,Prediction Meets Threshold
+ToothFairy2P_193,27,28,1,Independent,0,Contact,0,0.447,0.447,0.39,0.163,Review Required
+ToothFairy2P_193,37,38,2,Resorption,2,Resorption,1,0.5052,0.2081,0.2866,0.5052,Review Required
+ToothFairy2P_194,37,38,1,Independent,1,Independent,1,0.8561,0.1327,0.8561,0.0112,Prediction Meets Threshold
+ToothFairy2P_195,17,18,1,Independent,1,Independent,1,0.7024,0.2422,0.7024,0.0554,Prediction Meets Threshold
+ToothFairy2P_195,27,28,1,Independent,1,Independent,1,0.536,0.3631,0.536,0.101,Review Required
+ToothFairy2P_195,37,38,0,Contact,1,Independent,0,0.4581,0.3502,0.4581,0.1917,Review Required
+ToothFairy2P_195,47,48,0,Contact,0,Contact,1,0.4593,0.4593,0.3839,0.1568,Review Required
+ToothFairy2P_197,27,28,0,Contact,0,Contact,1,0.7792,0.7792,0.1988,0.022,Prediction Meets Threshold
+ToothFairy2P_197,47,48,2,Resorption,0,Contact,0,0.4131,0.4131,0.3932,0.1937,Review Required
+ToothFairy2P_198,17,18,1,Independent,1,Independent,1,0.6477,0.3044,0.6477,0.0479,Review Required
+ToothFairy2P_198,27,28,1,Independent,1,Independent,1,0.8115,0.1516,0.8115,0.0369,Prediction Meets Threshold
+ToothFairy2P_198,37,38,1,Independent,1,Independent,1,0.61,0.3397,0.61,0.0503,Review Required
+ToothFairy2P_198,47,48,0,Contact,0,Contact,1,0.8869,0.8869,0.1033,0.0097,Prediction Meets Threshold
+ToothFairy2P_199,47,48,0,Contact,0,Contact,1,0.9136,0.9136,0.079,0.0074,Prediction Meets Threshold
+ToothFairy2P_200,17,18,0,Contact,0,Contact,1,0.7444,0.7444,0.2112,0.0445,Prediction Meets Threshold
+ToothFairy2P_200,27,28,0,Contact,1,Independent,0,0.5847,0.2772,0.5847,0.1381,Review Required
+ToothFairy2P_200,37,38,0,Contact,0,Contact,1,0.7431,0.7431,0.2282,0.0287,Prediction Meets Threshold
+ToothFairy2P_201,17,18,1,Independent,0,Contact,0,0.6679,0.6679,0.2785,0.0536,Review Required
+ToothFairy2P_201,27,28,0,Contact,0,Contact,1,0.6291,0.6291,0.3016,0.0694,Review Required
+ToothFairy2P_201,37,38,1,Independent,1,Independent,1,0.4282,0.2938,0.4282,0.278,Review Required
+ToothFairy2P_201,47,48,1,Independent,0,Contact,0,0.4009,0.4009,0.381,0.2181,Review Required
+ToothFairy2P_202,47,48,1,Independent,1,Independent,1,0.5275,0.4408,0.5275,0.0317,Review Required
+ToothFairy2P_203,37,38,0,Contact,0,Contact,1,0.7245,0.7245,0.2505,0.025,Prediction Meets Threshold
+ToothFairy2P_203,47,48,0,Contact,0,Contact,1,0.7847,0.7847,0.2013,0.014,Prediction Meets Threshold
+ToothFairy2P_205,37,38,1,Independent,1,Independent,1,0.9642,0.0294,0.9642,0.0064,Prediction Meets Threshold
+ToothFairy2P_206,17,18,0,Contact,0,Contact,1,0.8205,0.8205,0.1621,0.0174,Prediction Meets Threshold
+ToothFairy2P_206,27,28,0,Contact,0,Contact,1,0.7687,0.7687,0.1924,0.0389,Prediction Meets Threshold
+ToothFairy2P_206,37,38,0,Contact,0,Contact,1,0.8631,0.8631,0.1251,0.0118,Prediction Meets Threshold
+ToothFairy2P_206,47,48,0,Contact,0,Contact,1,0.7533,0.7533,0.2351,0.0116,Prediction Meets Threshold
+ToothFairy2P_207,27,28,1,Independent,1,Independent,1,0.5664,0.3982,0.5664,0.0354,Review Required
+ToothFairy2P_207,47,48,0,Contact,0,Contact,1,0.6855,0.6855,0.2992,0.0153,Review Required
+ToothFairy2P_208,37,38,0,Contact,0,Contact,1,0.9037,0.9037,0.0943,0.002,Prediction Meets Threshold
+ToothFairy2P_208,47,48,0,Contact,0,Contact,1,0.93,0.93,0.0635,0.0065,Prediction Meets Threshold
+ToothFairy2P_209,17,18,1,Independent,0,Contact,0,0.4668,0.4668,0.3758,0.1574,Review Required
+ToothFairy2P_209,47,48,1,Independent,1,Independent,1,0.641,0.2567,0.641,0.1023,Review Required
+ToothFairy2P_210,37,38,1,Independent,1,Independent,1,0.7573,0.2101,0.7573,0.0326,Prediction Meets Threshold
+ToothFairy2P_210,47,48,1,Independent,1,Independent,1,0.9527,0.0305,0.9527,0.0169,Prediction Meets Threshold
+ToothFairy2P_214,37,38,0,Contact,0,Contact,1,0.9496,0.9496,0.0448,0.0056,Prediction Meets Threshold
+ToothFairy2P_214,47,48,0,Contact,0,Contact,1,0.695,0.695,0.2569,0.048,Review Required
+ToothFairy2P_216,37,38,1,Independent,1,Independent,1,0.8432,0.1148,0.8432,0.0419,Prediction Meets Threshold
+ToothFairy2P_216,47,48,1,Independent,1,Independent,1,0.9011,0.0752,0.9011,0.0237,Prediction Meets Threshold
+ToothFairy2P_217,17,18,1,Independent,1,Independent,1,0.6337,0.2561,0.6337,0.1101,Review Required
+ToothFairy2P_217,27,28,1,Independent,0,Contact,0,0.4799,0.4799,0.473,0.0471,Review Required
+ToothFairy2P_217,37,38,1,Independent,1,Independent,1,0.7911,0.1448,0.7911,0.0641,Prediction Meets Threshold
+ToothFairy2P_217,47,48,0,Contact,1,Independent,0,0.4844,0.3302,0.4844,0.1854,Review Required
+ToothFairy2P_230,37,38,1,Independent,1,Independent,1,0.9332,0.0483,0.9332,0.0184,Prediction Meets Threshold
+ToothFairy2P_230,47,48,1,Independent,1,Independent,1,0.8924,0.0745,0.8924,0.033,Prediction Meets Threshold
+ToothFairy2P_231,37,38,0,Contact,0,Contact,1,0.8796,0.8796,0.1107,0.0097,Prediction Meets Threshold
+ToothFairy2P_231,47,48,1,Independent,0,Contact,0,0.5663,0.5663,0.3996,0.034,Review Required
+ToothFairy2P_232,37,38,0,Contact,1,Independent,0,0.5771,0.3802,0.5771,0.0427,Review Required
+ToothFairy2P_232,47,48,1,Independent,1,Independent,1,0.7368,0.1896,0.7368,0.0736,Prediction Meets Threshold
+ToothFairy2P_233,37,38,1,Independent,1,Independent,1,0.568,0.3915,0.568,0.0405,Review Required
+ToothFairy2P_237,37,38,0,Contact,0,Contact,1,0.6895,0.6895,0.2945,0.016,Review Required
+ToothFairy2P_237,47,48,0,Contact,0,Contact,1,0.8777,0.8777,0.1161,0.0062,Prediction Meets Threshold
+ToothFairy2P_239,17,18,1,Independent,0,Contact,0,0.5699,0.5699,0.3697,0.0604,Review Required
+ToothFairy2P_239,27,28,1,Independent,1,Independent,1,0.6604,0.2632,0.6604,0.0764,Review Required
+ToothFairy2P_239,37,38,0,Contact,0,Contact,1,0.6969,0.6969,0.2518,0.0513,Review Required
+ToothFairy2P_239,47,48,0,Contact,0,Contact,1,0.7665,0.7665,0.2006,0.0329,Prediction Meets Threshold
+ToothFairy2P_241,27,28,1,Independent,1,Independent,1,0.5263,0.4404,0.5263,0.0333,Review Required
+ToothFairy2P_241,37,38,0,Contact,0,Contact,1,0.6766,0.6766,0.2706,0.0528,Review Required
+ToothFairy2P_241,47,48,0,Contact,0,Contact,1,0.852,0.852,0.1298,0.0182,Prediction Meets Threshold
+ToothFairy2P_242,17,18,0,Contact,0,Contact,1,0.5355,0.5355,0.4029,0.0617,Review Required
+ToothFairy2P_242,27,28,0,Contact,0,Contact,1,0.5112,0.5112,0.4078,0.0809,Review Required
+ToothFairy2P_242,37,38,0,Contact,1,Independent,0,0.4747,0.4305,0.4747,0.0948,Review Required
+ToothFairy2P_242,47,48,0,Contact,0,Contact,1,0.5561,0.5561,0.4023,0.0416,Review Required
+ToothFairy2P_244,17,18,0,Contact,0,Contact,1,0.5648,0.5648,0.3911,0.0441,Review Required
+ToothFairy2P_244,27,28,1,Independent,1,Independent,1,0.6439,0.313,0.6439,0.0432,Review Required
+ToothFairy2P_244,37,38,1,Independent,1,Independent,1,0.5452,0.3815,0.5452,0.0734,Review Required
+ToothFairy2P_244,47,48,1,Independent,1,Independent,1,0.5288,0.2442,0.5288,0.2269,Review Required
+ToothFairy2P_246,17,18,0,Contact,1,Independent,0,0.5098,0.4625,0.5098,0.0277,Review Required
+ToothFairy2P_246,37,38,0,Contact,0,Contact,1,0.6354,0.6354,0.3341,0.0305,Review Required
+ToothFairy2P_246,47,48,1,Independent,1,Independent,1,0.6975,0.2593,0.6975,0.0432,Review Required
+ToothFairy2P_250,37,38,1,Independent,1,Independent,1,0.9384,0.0485,0.9384,0.0131,Prediction Meets Threshold
+ToothFairy2P_250,47,48,1,Independent,1,Independent,1,0.8084,0.1739,0.8084,0.0177,Prediction Meets Threshold
+ToothFairy2P_252,17,18,1,Independent,1,Independent,1,0.5004,0.4432,0.5004,0.0564,Review Required
+ToothFairy2P_252,37,38,0,Contact,0,Contact,1,0.8622,0.8622,0.1242,0.0136,Prediction Meets Threshold
+ToothFairy2P_252,47,48,0,Contact,0,Contact,1,0.7649,0.7649,0.2118,0.0232,Prediction Meets Threshold
+ToothFairy2P_253,37,38,0,Contact,1,Independent,0,0.7304,0.2433,0.7304,0.0262,Prediction Meets Threshold
+ToothFairy2P_253,47,48,1,Independent,0,Contact,0,0.7969,0.7969,0.1817,0.0214,Prediction Meets Threshold
+ToothFairy2P_254,47,48,0,Contact,0,Contact,1,0.6148,0.6148,0.3592,0.026,Review Required
+ToothFairy2P_256,37,38,0,Contact,0,Contact,1,0.8964,0.8964,0.0929,0.0107,Prediction Meets Threshold
+ToothFairy2P_256,47,48,0,Contact,0,Contact,1,0.8446,0.8446,0.1389,0.0165,Prediction Meets Threshold
+ToothFairy2P_258,17,18,1,Independent,1,Independent,1,0.7676,0.1808,0.7676,0.0516,Prediction Meets Threshold
+ToothFairy2P_258,27,28,1,Independent,1,Independent,1,0.6951,0.2542,0.6951,0.0507,Review Required
+ToothFairy2P_258,37,38,1,Independent,1,Independent,1,0.8472,0.1335,0.8472,0.0193,Prediction Meets Threshold
+ToothFairy2P_258,47,48,0,Contact,0,Contact,1,0.549,0.549,0.3908,0.0602,Review Required
+ToothFairy2P_261,27,28,0,Contact,0,Contact,1,0.9209,0.9209,0.0684,0.0107,Prediction Meets Threshold
+ToothFairy2P_261,37,38,0,Contact,0,Contact,1,0.8484,0.8484,0.1325,0.0192,Prediction Meets Threshold
+ToothFairy2P_263,27,28,0,Contact,0,Contact,1,0.9209,0.9209,0.0684,0.0107,Prediction Meets Threshold
+ToothFairy2P_263,37,38,0,Contact,0,Contact,1,0.8484,0.8484,0.1325,0.0192,Prediction Meets Threshold
+ToothFairy2P_324,17,18,1,Independent,1,Independent,1,0.571,0.3547,0.571,0.0743,Review Required
+ToothFairy2P_324,27,28,0,Contact,0,Contact,1,0.5745,0.5745,0.3393,0.0862,Review Required
+ToothFairy2P_324,37,38,1,Independent,0,Contact,0,0.5935,0.5935,0.3358,0.0708,Review Required
+ToothFairy2P_324,47,48,0,Contact,0,Contact,1,0.5683,0.5683,0.382,0.0497,Review Required
+ToothFairy2P_326,37,38,0,Contact,0,Contact,1,0.716,0.716,0.262,0.022,Prediction Meets Threshold
+ToothFairy2P_326,47,48,1,Independent,0,Contact,0,0.7642,0.7642,0.2055,0.0303,Prediction Meets Threshold
+ToothFairy2P_327,17,18,0,Contact,0,Contact,1,0.7123,0.7123,0.2469,0.0408,Prediction Meets Threshold
+ToothFairy2P_327,27,28,1,Independent,0,Contact,0,0.5937,0.5937,0.3712,0.035,Review Required
+ToothFairy2P_327,37,38,0,Contact,1,Independent,0,0.5129,0.4289,0.5129,0.0582,Review Required
+ToothFairy2P_327,47,48,0,Contact,0,Contact,1,0.6959,0.6959,0.2505,0.0537,Review Required
+ToothFairy2P_330,37,38,1,Independent,1,Independent,1,0.806,0.1649,0.806,0.0292,Prediction Meets Threshold
+ToothFairy2P_332,27,28,1,Independent,1,Independent,1,0.7651,0.1937,0.7651,0.0412,Prediction Meets Threshold
+ToothFairy2P_332,37,38,1,Independent,1,Independent,1,0.8683,0.1241,0.8683,0.0076,Prediction Meets Threshold
+ToothFairy2P_332,47,48,1,Independent,1,Independent,1,0.6588,0.3061,0.6588,0.0352,Review Required
+ToothFairy2P_336,37,38,1,Independent,1,Independent,1,0.8683,0.1163,0.8683,0.0154,Prediction Meets Threshold
+ToothFairy2P_336,47,48,1,Independent,1,Independent,1,0.9411,0.0508,0.9411,0.0081,Prediction Meets Threshold
+ToothFairy2P_337,17,18,0,Contact,0,Contact,1,0.8606,0.8606,0.1202,0.0191,Prediction Meets Threshold
+ToothFairy2P_337,27,28,0,Contact,0,Contact,1,0.9162,0.9162,0.0759,0.0079,Prediction Meets Threshold
+ToothFairy2P_337,37,38,0,Contact,0,Contact,1,0.7362,0.7362,0.2359,0.0279,Prediction Meets Threshold
+ToothFairy2P_337,47,48,0,Contact,0,Contact,1,0.8556,0.8556,0.1217,0.0227,Prediction Meets Threshold
+ToothFairy2P_338,37,38,0,Contact,0,Contact,1,0.9,0.9,0.0958,0.0041,Prediction Meets Threshold
+ToothFairy2P_338,47,48,0,Contact,0,Contact,1,0.7895,0.7895,0.2057,0.0048,Prediction Meets Threshold
+ToothFairy2P_339,27,28,1,Independent,1,Independent,1,0.5355,0.427,0.5355,0.0375,Review Required
+ToothFairy2P_342,47,48,1,Independent,1,Independent,1,0.8401,0.1275,0.8401,0.0323,Prediction Meets Threshold
+ToothFairy2P_343,17,18,1,Independent,0,Contact,0,0.5384,0.5384,0.3985,0.0631,Review Required
+ToothFairy2P_343,27,28,0,Contact,0,Contact,1,0.4776,0.4776,0.4467,0.0758,Review Required
+ToothFairy2P_343,37,38,0,Contact,1,Independent,0,0.5509,0.3812,0.5509,0.068,Review Required
+ToothFairy2P_343,47,48,0,Contact,1,Independent,0,0.4405,0.418,0.4405,0.1415,Review Required
+ToothFairy2P_347,47,48,1,Independent,1,Independent,1,0.7047,0.2769,0.7047,0.0184,Prediction Meets Threshold
+ToothFairy2P_348,17,18,0,Contact,0,Contact,1,0.8726,0.8726,0.1095,0.0179,Prediction Meets Threshold
+ToothFairy2P_348,27,28,0,Contact,0,Contact,1,0.9387,0.9387,0.0544,0.0069,Prediction Meets Threshold
+ToothFairy2P_348,37,38,0,Contact,0,Contact,1,0.8764,0.8764,0.1063,0.0173,Prediction Meets Threshold
+ToothFairy2P_348,47,48,0,Contact,0,Contact,1,0.9265,0.9265,0.0646,0.0089,Prediction Meets Threshold
+ToothFairy2P_349,17,18,0,Contact,0,Contact,1,0.5316,0.5316,0.3824,0.0859,Review Required
+ToothFairy2P_349,27,28,0,Contact,0,Contact,1,0.7563,0.7563,0.2159,0.0278,Prediction Meets Threshold
+ToothFairy2P_349,37,38,0,Contact,0,Contact,1,0.5728,0.5728,0.2872,0.1401,Review Required
+ToothFairy2P_349,47,48,1,Independent,0,Contact,0,0.5132,0.5132,0.4099,0.0769,Review Required
+ToothFairy2P_354,17,18,0,Contact,0,Contact,1,0.7916,0.7916,0.1779,0.0305,Prediction Meets Threshold
+ToothFairy2P_354,27,28,0,Contact,0,Contact,1,0.8048,0.8048,0.1638,0.0314,Prediction Meets Threshold
+ToothFairy2P_354,37,38,0,Contact,0,Contact,1,0.6747,0.6747,0.2405,0.0848,Review Required
+ToothFairy2P_354,47,48,0,Contact,0,Contact,1,0.7984,0.7984,0.1734,0.0282,Prediction Meets Threshold
+ToothFairy2P_355,37,38,0,Contact,1,Independent,0,0.6719,0.2309,0.6719,0.0972,Review Required
+ToothFairy2P_355,47,48,1,Independent,1,Independent,1,0.5104,0.4142,0.5104,0.0755,Review Required
+ToothFairy2P_357,47,48,1,Independent,1,Independent,1,0.9653,0.0279,0.9653,0.0068,Prediction Meets Threshold
+ToothFairy2P_359,27,28,0,Contact,0,Contact,1,0.8963,0.8963,0.0846,0.0191,Prediction Meets Threshold
+ToothFairy2P_359,37,38,0,Contact,0,Contact,1,0.8538,0.8538,0.1357,0.0105,Prediction Meets Threshold
+ToothFairy2P_359,47,48,1,Independent,0,Contact,0,0.4174,0.4174,0.3879,0.1947,Review Required
+ToothFairy2P_360,17,18,0,Contact,0,Contact,1,0.7474,0.7474,0.2258,0.0268,Prediction Meets Threshold
+ToothFairy2P_360,37,38,0,Contact,1,Independent,0,0.5407,0.3283,0.5407,0.131,Review Required
+ToothFairy2P_360,47,48,1,Independent,1,Independent,1,0.7203,0.2252,0.7203,0.0545,Prediction Meets Threshold
+ToothFairy2P_361,47,48,0,Contact,0,Contact,1,0.8143,0.8143,0.1723,0.0134,Prediction Meets Threshold
+ToothFairy2P_362,37,38,1,Independent,1,Independent,1,0.9462,0.0448,0.9462,0.009,Prediction Meets Threshold
+ToothFairy2P_362,47,48,0,Contact,1,Independent,0,0.5705,0.328,0.5705,0.1015,Review Required
+ToothFairy2P_365,17,18,0,Contact,0,Contact,1,0.7564,0.7564,0.209,0.0346,Prediction Meets Threshold
+ToothFairy2P_365,27,28,0,Contact,0,Contact,1,0.7033,0.7033,0.2681,0.0286,Prediction Meets Threshold
+ToothFairy2P_365,37,38,0,Contact,0,Contact,1,0.5984,0.5984,0.3309,0.0707,Review Required
+ToothFairy2P_365,47,48,0,Contact,0,Contact,1,0.8473,0.8473,0.1331,0.0196,Prediction Meets Threshold
+ToothFairy2P_366,37,38,1,Independent,0,Contact,0,0.5697,0.5697,0.424,0.0063,Review Required
+ToothFairy2P_366,47,48,1,Independent,1,Independent,1,0.5915,0.298,0.5915,0.1105,Review Required
+ToothFairy2P_370,37,38,0,Contact,1,Independent,0,0.7363,0.2257,0.7363,0.038,Prediction Meets Threshold
+ToothFairy2P_372,17,18,0,Contact,1,Independent,0,0.5553,0.3649,0.5553,0.0799,Review Required
+ToothFairy2P_372,27,28,0,Contact,1,Independent,0,0.4304,0.3491,0.4304,0.2205,Review Required
+ToothFairy2P_372,37,38,1,Independent,1,Independent,1,0.9036,0.0579,0.9036,0.0384,Prediction Meets Threshold
+ToothFairy2P_372,47,48,1,Independent,1,Independent,1,0.9383,0.042,0.9383,0.0197,Prediction Meets Threshold
+ToothFairy2P_373,47,48,1,Independent,1,Independent,1,0.6368,0.3068,0.6368,0.0564,Review Required
+ToothFairy2P_376,17,18,0,Contact,1,Independent,0,0.5443,0.3772,0.5443,0.0785,Review Required
+ToothFairy2P_376,27,28,1,Independent,1,Independent,1,0.6856,0.2431,0.6856,0.0712,Review Required
+ToothFairy2P_376,37,38,0,Contact,0,Contact,1,0.5875,0.5875,0.34,0.0725,Review Required
+ToothFairy2P_376,47,48,1,Independent,1,Independent,1,0.5602,0.3236,0.5602,0.1162,Review Required
+ToothFairy2P_380,17,18,0,Contact,0,Contact,1,0.6934,0.6934,0.2616,0.045,Review Required
+ToothFairy2P_380,27,28,0,Contact,0,Contact,1,0.5707,0.5707,0.384,0.0453,Review Required
+ToothFairy2P_380,37,38,1,Independent,1,Independent,1,0.6184,0.3287,0.6184,0.0529,Review Required
+ToothFairy2P_380,47,48,1,Independent,1,Independent,1,0.5077,0.4377,0.5077,0.0546,Review Required
+ToothFairy2P_381,47,48,1,Independent,1,Independent,1,0.9615,0.0313,0.9615,0.0073,Prediction Meets Threshold
+ToothFairy2P_387,17,18,1,Independent,1,Independent,1,0.646,0.3019,0.646,0.0521,Review Required
+ToothFairy2P_387,37,38,0,Contact,0,Contact,1,0.8113,0.8113,0.1704,0.0183,Prediction Meets Threshold
+ToothFairy2P_387,47,48,0,Contact,0,Contact,1,0.5884,0.5884,0.3782,0.0334,Review Required
+ToothFairy2P_390,17,18,1,Independent,1,Independent,1,0.5247,0.252,0.5247,0.2233,Review Required
+ToothFairy2P_390,27,28,1,Independent,1,Independent,1,0.6099,0.211,0.6099,0.1791,Review Required
+ToothFairy2P_390,37,38,2,Resorption,2,Resorption,1,0.374,0.2939,0.332,0.374,Review Required
+ToothFairy2P_390,47,48,0,Contact,0,Contact,1,0.6573,0.6573,0.247,0.0957,Review Required
+ToothFairy2P_391,47,48,1,Independent,1,Independent,1,0.7113,0.2549,0.7113,0.0338,Prediction Meets Threshold
+ToothFairy2P_394,37,38,1,Independent,1,Independent,1,0.6547,0.2996,0.6547,0.0458,Review Required
+ToothFairy2P_394,47,48,0,Contact,0,Contact,1,0.743,0.743,0.2483,0.0087,Prediction Meets Threshold
+ToothFairy2P_395,17,18,0,Contact,0,Contact,1,0.7996,0.7996,0.1798,0.0206,Prediction Meets Threshold
+ToothFairy2P_395,27,28,2,Resorption,0,Contact,0,0.6392,0.6392,0.3128,0.048,Review Required
+ToothFairy2P_395,37,38,0,Contact,0,Contact,1,0.4198,0.4198,0.3978,0.1824,Review Required
+ToothFairy2P_395,47,48,0,Contact,0,Contact,1,0.4829,0.4829,0.3613,0.1557,Review Required
+ToothFairy2P_396,17,18,0,Contact,0,Contact,1,0.7245,0.7245,0.2318,0.0437,Prediction Meets Threshold
+ToothFairy2P_396,27,28,0,Contact,0,Contact,1,0.7467,0.7467,0.1867,0.0666,Prediction Meets Threshold
+ToothFairy2P_396,37,38,0,Contact,0,Contact,1,0.4393,0.4393,0.3736,0.1871,Review Required
+ToothFairy2P_396,47,48,0,Contact,0,Contact,1,0.5785,0.5785,0.3009,0.1205,Review Required
+ToothFairy2P_399,37,38,0,Contact,0,Contact,1,0.8289,0.8289,0.1514,0.0196,Prediction Meets Threshold
+ToothFairy2P_399,47,48,0,Contact,0,Contact,1,0.7889,0.7889,0.2031,0.008,Prediction Meets Threshold
+ToothFairy2P_401,37,38,1,Independent,1,Independent,1,0.8877,0.0903,0.8877,0.022,Prediction Meets Threshold
+ToothFairy2P_401,47,48,1,Independent,1,Independent,1,0.9439,0.0434,0.9439,0.0127,Prediction Meets Threshold
+ToothFairy2P_402,17,18,0,Contact,0,Contact,1,0.9242,0.9242,0.0697,0.0061,Prediction Meets Threshold
+ToothFairy2P_402,37,38,0,Contact,0,Contact,1,0.7056,0.7056,0.2567,0.0377,Prediction Meets Threshold
+ToothFairy2P_402,47,48,1,Independent,1,Independent,1,0.5539,0.3342,0.5539,0.1119,Review Required
+ToothFairy2P_403,27,28,0,Contact,0,Contact,1,0.6792,0.6792,0.29,0.0308,Review Required
+ToothFairy2P_403,37,38,1,Independent,1,Independent,1,0.8672,0.1006,0.8672,0.0323,Prediction Meets Threshold
+ToothFairy2P_403,47,48,1,Independent,1,Independent,1,0.6548,0.2768,0.6548,0.0684,Review Required
+ToothFairy2P_405,17,18,0,Contact,0,Contact,1,0.6381,0.6381,0.3379,0.024,Review Required
+ToothFairy2P_405,27,28,0,Contact,0,Contact,1,0.774,0.774,0.2227,0.0033,Prediction Meets Threshold
+ToothFairy2P_405,37,38,0,Contact,0,Contact,1,0.8982,0.8982,0.0948,0.007,Prediction Meets Threshold
+ToothFairy2P_405,47,48,1,Independent,0,Contact,0,0.5253,0.5253,0.4609,0.0138,Review Required
+ToothFairy2P_407,37,38,0,Contact,0,Contact,1,0.4816,0.4816,0.4385,0.08,Review Required
+ToothFairy2P_407,47,48,0,Contact,0,Contact,1,0.6826,0.6826,0.3115,0.0058,Review Required
+ToothFairy2P_409,17,18,0,Contact,0,Contact,1,0.8045,0.8045,0.175,0.0204,Prediction Meets Threshold
+ToothFairy2P_409,47,48,0,Contact,0,Contact,1,0.6759,0.6759,0.3187,0.0054,Review Required
+ToothFairy2P_410,37,38,0,Contact,1,Independent,0,0.6374,0.3123,0.6374,0.0503,Review Required
+ToothFairy2P_411,37,38,1,Independent,1,Independent,1,0.8983,0.0776,0.8983,0.0241,Prediction Meets Threshold
+ToothFairy2P_411,47,48,1,Independent,1,Independent,1,0.7899,0.1885,0.7899,0.0216,Prediction Meets Threshold
+ToothFairy2P_412,37,38,0,Contact,0,Contact,1,0.9214,0.9214,0.0708,0.0078,Prediction Meets Threshold
+ToothFairy2P_412,47,48,0,Contact,0,Contact,1,0.9278,0.9278,0.0686,0.0036,Prediction Meets Threshold
+ToothFairy2P_416,17,18,2,Resorption,1,Independent,0,0.4109,0.2746,0.4109,0.3145,Review Required
+ToothFairy2P_416,27,28,1,Independent,1,Independent,1,0.6374,0.2361,0.6374,0.1265,Review Required
+ToothFairy2P_416,37,38,1,Independent,1,Independent,1,0.5802,0.233,0.5802,0.1868,Review Required
+ToothFairy2P_416,47,48,1,Independent,1,Independent,1,0.3882,0.365,0.3882,0.2468,Review Required
+ToothFairy2P_418,37,38,0,Contact,0,Contact,1,0.882,0.882,0.1105,0.0075,Prediction Meets Threshold
+ToothFairy2P_422,37,38,2,Resorption,1,Independent,0,0.3822,0.2768,0.3822,0.341,Review Required
+ToothFairy2P_422,47,48,1,Independent,1,Independent,1,0.6705,0.1592,0.6705,0.1704,Review Required
+ToothFairy2P_424,37,38,0,Contact,0,Contact,1,0.6824,0.6824,0.2881,0.0295,Review Required
+ToothFairy2P_425,37,38,0,Contact,1,Independent,0,0.5346,0.4144,0.5346,0.051,Review Required
+ToothFairy2P_425,47,48,0,Contact,1,Independent,0,0.4715,0.4553,0.4715,0.0733,Review Required
+ToothFairy2P_426,27,28,0,Contact,0,Contact,1,0.7707,0.7707,0.2071,0.0222,Prediction Meets Threshold
+ToothFairy2P_426,37,38,0,Contact,0,Contact,1,0.77,0.77,0.2085,0.0215,Prediction Meets Threshold
+ToothFairy2P_426,47,48,0,Contact,0,Contact,1,0.7814,0.7814,0.208,0.0106,Prediction Meets Threshold
+ToothFairy2P_428,17,18,0,Contact,0,Contact,1,0.8818,0.8818,0.096,0.0223,Prediction Meets Threshold
+ToothFairy2P_428,27,28,0,Contact,0,Contact,1,0.8745,0.8745,0.1013,0.0242,Prediction Meets Threshold
+ToothFairy2P_428,37,38,0,Contact,0,Contact,1,0.9161,0.9161,0.0767,0.0071,Prediction Meets Threshold
+ToothFairy2P_428,47,48,0,Contact,0,Contact,1,0.9274,0.9274,0.0664,0.0061,Prediction Meets Threshold
+ToothFairy2P_429,17,18,1,Independent,1,Independent,1,0.5036,0.3515,0.5036,0.1449,Review Required
+ToothFairy2P_429,27,28,1,Independent,1,Independent,1,0.4631,0.4313,0.4631,0.1055,Review Required
+ToothFairy2P_429,37,38,0,Contact,0,Contact,1,0.4894,0.4894,0.3985,0.1121,Review Required
+ToothFairy2P_429,47,48,0,Contact,1,Independent,0,0.6909,0.2529,0.6909,0.0562,Review Required
+ToothFairy2P_430,17,18,0,Contact,0,Contact,1,0.8003,0.8003,0.1703,0.0294,Prediction Meets Threshold
+ToothFairy2P_430,37,38,0,Contact,0,Contact,1,0.6874,0.6874,0.2941,0.0185,Review Required
+ToothFairy2P_430,47,48,1,Independent,1,Independent,1,0.4785,0.3954,0.4785,0.1262,Review Required
+ToothFairy2P_432,17,18,1,Independent,1,Independent,1,0.6885,0.2601,0.6885,0.0514,Review Required
+ToothFairy2P_432,27,28,1,Independent,0,Contact,0,0.4704,0.4704,0.3209,0.2087,Review Required
+ToothFairy2P_432,37,38,0,Contact,1,Independent,0,0.5586,0.3511,0.5586,0.0902,Review Required
+ToothFairy2P_432,47,48,0,Contact,0,Contact,1,0.7186,0.7186,0.2711,0.0102,Prediction Meets Threshold
+ToothFairy2P_433,17,18,0,Contact,0,Contact,1,0.5809,0.5809,0.4032,0.0159,Review Required
+ToothFairy2P_433,27,28,1,Independent,0,Contact,0,0.5702,0.5702,0.4018,0.028,Review Required
+ToothFairy2P_433,37,38,1,Independent,0,Contact,0,0.5846,0.5846,0.3705,0.0448,Review Required
+ToothFairy2P_433,47,48,1,Independent,1,Independent,1,0.6373,0.3154,0.6373,0.0472,Review Required
+ToothFairy2P_435,17,18,1,Independent,1,Independent,1,0.5915,0.3061,0.5915,0.1024,Review Required
+ToothFairy2P_435,27,28,0,Contact,1,Independent,0,0.5596,0.353,0.5596,0.0874,Review Required
+ToothFairy2P_435,37,38,0,Contact,1,Independent,0,0.5934,0.3839,0.5934,0.0227,Review Required
+ToothFairy2P_435,47,48,0,Contact,0,Contact,1,0.9028,0.9028,0.0834,0.0138,Prediction Meets Threshold
+ToothFairy2P_437,17,18,1,Independent,1,Independent,1,0.8417,0.1096,0.8417,0.0486,Prediction Meets Threshold
+ToothFairy2P_437,27,28,1,Independent,1,Independent,1,0.6168,0.2968,0.6168,0.0865,Review Required
+ToothFairy2P_437,37,38,0,Contact,0,Contact,1,0.5293,0.5293,0.4414,0.0293,Review Required
+ToothFairy2P_437,47,48,0,Contact,0,Contact,1,0.5707,0.5707,0.384,0.0453,Review Required
+ToothFairy2P_438,17,18,0,Contact,0,Contact,1,0.738,0.738,0.2475,0.0145,Prediction Meets Threshold
+ToothFairy2P_438,27,28,0,Contact,0,Contact,1,0.7065,0.7065,0.2585,0.035,Prediction Meets Threshold
+ToothFairy2P_438,37,38,0,Contact,1,Independent,0,0.4949,0.4792,0.4949,0.0259,Review Required
+ToothFairy2P_438,47,48,0,Contact,0,Contact,1,0.7698,0.7698,0.1968,0.0334,Prediction Meets Threshold
+ToothFairy2P_439,17,18,0,Contact,0,Contact,1,0.658,0.658,0.2635,0.0785,Review Required
+ToothFairy2P_439,27,28,0,Contact,0,Contact,1,0.6894,0.6894,0.252,0.0586,Review Required
+ToothFairy2P_439,47,48,2,Resorption,2,Resorption,1,0.3823,0.3008,0.3169,0.3823,Review Required
+ToothFairy2P_440,17,18,0,Contact,0,Contact,1,0.5042,0.5042,0.485,0.0108,Review Required
+ToothFairy2P_440,37,38,1,Independent,1,Independent,1,0.8398,0.1398,0.8398,0.0203,Prediction Meets Threshold
+ToothFairy2P_443,17,18,0,Contact,0,Contact,1,0.7643,0.7643,0.193,0.0427,Prediction Meets Threshold
+ToothFairy2P_443,27,28,0,Contact,0,Contact,1,0.8924,0.8924,0.0928,0.0148,Prediction Meets Threshold
+ToothFairy2P_443,37,38,0,Contact,0,Contact,1,0.8766,0.8766,0.0957,0.0277,Prediction Meets Threshold
+ToothFairy2P_443,47,48,0,Contact,0,Contact,1,0.8126,0.8126,0.1603,0.0271,Prediction Meets Threshold
+ToothFairy2P_444,37,38,1,Independent,1,Independent,1,0.7352,0.1995,0.7352,0.0653,Prediction Meets Threshold
+ToothFairy2P_446,47,48,0,Contact,0,Contact,1,0.5942,0.5942,0.3797,0.0261,Review Required
+ToothFairy2P_447,17,18,0,Contact,0,Contact,1,0.7358,0.7358,0.229,0.0352,Prediction Meets Threshold
+ToothFairy2P_447,27,28,0,Contact,0,Contact,1,0.7399,0.7399,0.2366,0.0236,Prediction Meets Threshold
+ToothFairy2P_447,37,38,0,Contact,0,Contact,1,0.5502,0.5502,0.4094,0.0404,Review Required
+ToothFairy2P_447,47,48,1,Independent,1,Independent,1,0.8673,0.1019,0.8673,0.0309,Prediction Meets Threshold
+ToothFairy2P_448,17,18,1,Independent,1,Independent,1,0.6789,0.2084,0.6789,0.1127,Review Required
+ToothFairy2P_448,27,28,1,Independent,1,Independent,1,0.687,0.2457,0.687,0.0673,Review Required
+ToothFairy2P_448,37,38,0,Contact,1,Independent,0,0.3947,0.3827,0.3947,0.2226,Review Required
+ToothFairy2P_448,47,48,0,Contact,0,Contact,1,0.7098,0.7098,0.2271,0.063,Prediction Meets Threshold
+ToothFairy2P_451,37,38,1,Independent,1,Independent,1,0.8703,0.122,0.8703,0.0078,Prediction Meets Threshold
+ToothFairy2P_451,47,48,1,Independent,1,Independent,1,0.5633,0.4024,0.5633,0.0343,Review Required
+ToothFairy2P_452,47,48,0,Contact,1,Independent,0,0.6494,0.3191,0.6494,0.0315,Review Required
+ToothFairy2P_453,17,18,0,Contact,0,Contact,1,0.9275,0.9275,0.0679,0.0045,Prediction Meets Threshold
+ToothFairy2P_453,27,28,0,Contact,0,Contact,1,0.8028,0.8028,0.1722,0.0251,Prediction Meets Threshold
+ToothFairy2P_453,37,38,0,Contact,0,Contact,1,0.6052,0.6052,0.2791,0.1157,Review Required
+ToothFairy2P_453,47,48,0,Contact,0,Contact,1,0.7387,0.7387,0.2081,0.0532,Prediction Meets Threshold
+ToothFairy2P_454,17,18,0,Contact,1,Independent,0,0.6547,0.2848,0.6547,0.0605,Review Required
+ToothFairy2P_454,37,38,1,Independent,1,Independent,1,0.9246,0.0585,0.9246,0.0169,Prediction Meets Threshold
+ToothFairy2P_454,47,48,0,Contact,1,Independent,0,0.6567,0.3075,0.6567,0.0358,Review Required
+ToothFairy2P_456,17,18,1,Independent,1,Independent,1,0.4942,0.3832,0.4942,0.1226,Review Required
+ToothFairy2P_456,27,28,0,Contact,0,Contact,1,0.5894,0.5894,0.2807,0.1299,Review Required
+ToothFairy2P_456,37,38,1,Independent,1,Independent,1,0.4354,0.4226,0.4354,0.142,Review Required
+ToothFairy2P_456,47,48,0,Contact,1,Independent,0,0.5772,0.3178,0.5772,0.105,Review Required
+ToothFairy2P_458,37,38,0,Contact,1,Independent,0,0.5621,0.3106,0.5621,0.1273,Review Required
+ToothFairy2P_458,47,48,0,Contact,1,Independent,0,0.5281,0.3617,0.5281,0.1102,Review Required
+ToothFairy2P_459,27,28,0,Contact,0,Contact,1,0.7381,0.7381,0.2185,0.0433,Prediction Meets Threshold
+ToothFairy2P_459,37,38,1,Independent,1,Independent,1,0.5094,0.4597,0.5094,0.0309,Review Required
+ToothFairy2P_459,47,48,1,Independent,1,Independent,1,0.6537,0.3164,0.6537,0.03,Review Required
+ToothFairy2P_460,17,18,2,Resorption,1,Independent,0,0.3807,0.2785,0.3807,0.3408,Review Required
+ToothFairy2P_460,27,28,0,Contact,1,Independent,0,0.5437,0.2978,0.5437,0.1586,Review Required
+ToothFairy2P_460,37,38,1,Independent,1,Independent,1,0.8774,0.0791,0.8774,0.0435,Prediction Meets Threshold
+ToothFairy2P_460,47,48,0,Contact,0,Contact,1,0.4657,0.4657,0.3511,0.1832,Review Required
+ToothFairy2P_464,47,48,1,Independent,1,Independent,1,0.8185,0.1574,0.8185,0.0241,Prediction Meets Threshold
+ToothFairy2P_465,17,18,0,Contact,0,Contact,1,0.6236,0.6236,0.3354,0.041,Review Required
+ToothFairy2P_465,27,28,1,Independent,0,Contact,0,0.5066,0.5066,0.4008,0.0927,Review Required
+ToothFairy2P_465,37,38,0,Contact,0,Contact,1,0.4527,0.4527,0.3565,0.1909,Review Required
+ToothFairy2P_465,47,48,0,Contact,0,Contact,1,0.6882,0.6882,0.2464,0.0655,Review Required
+ToothFairy2P_466,17,18,1,Independent,1,Independent,1,0.7025,0.2489,0.7025,0.0486,Prediction Meets Threshold
+ToothFairy2P_466,27,28,1,Independent,1,Independent,1,0.4842,0.4354,0.4842,0.0804,Review Required
+ToothFairy2P_466,37,38,0,Contact,1,Independent,0,0.7045,0.2539,0.7045,0.0416,Prediction Meets Threshold
+ToothFairy2P_466,47,48,2,Resorption,1,Independent,0,0.5582,0.3149,0.5582,0.1268,Review Required
+ToothFairy2P_467,47,48,1,Independent,1,Independent,1,0.9125,0.0771,0.9125,0.0104,Prediction Meets Threshold
+ToothFairy2P_470,37,38,0,Contact,0,Contact,1,0.7605,0.7605,0.2109,0.0287,Prediction Meets Threshold
+ToothFairy2P_470,47,48,0,Contact,0,Contact,1,0.855,0.855,0.124,0.0209,Prediction Meets Threshold
+ToothFairy2P_471,37,38,0,Contact,1,Independent,0,0.5276,0.4477,0.5276,0.0248,Review Required
+ToothFairy2P_474,37,38,0,Contact,0,Contact,1,0.7982,0.7982,0.1771,0.0247,Prediction Meets Threshold
+ToothFairy2P_474,47,48,0,Contact,0,Contact,1,0.6932,0.6932,0.2676,0.0392,Review Required
+ToothFairy2P_475,27,28,0,Contact,0,Contact,1,0.7834,0.7834,0.2004,0.0162,Prediction Meets Threshold
+ToothFairy2P_477,17,18,0,Contact,0,Contact,1,0.6346,0.6346,0.3169,0.0485,Review Required
+ToothFairy2P_477,27,28,0,Contact,0,Contact,1,0.7371,0.7371,0.2351,0.0278,Prediction Meets Threshold
+ToothFairy2P_477,37,38,0,Contact,0,Contact,1,0.6153,0.6153,0.3641,0.0206,Review Required
+ToothFairy2P_477,47,48,0,Contact,0,Contact,1,0.6241,0.6241,0.3536,0.0223,Review Required
+ToothFairy2P_480,37,38,1,Independent,1,Independent,1,0.5707,0.4091,0.5707,0.0202,Review Required
+ToothFairy2P_480,47,48,0,Contact,0,Contact,1,0.7847,0.7847,0.1965,0.0188,Prediction Meets Threshold
+ToothFairy2P_481,17,18,1,Independent,0,Contact,0,0.598,0.598,0.332,0.07,Review Required
+ToothFairy2P_481,27,28,0,Contact,0,Contact,1,0.6724,0.6724,0.2455,0.0821,Review Required
+ToothFairy2P_481,37,38,1,Independent,1,Independent,1,0.6633,0.2805,0.6633,0.0562,Review Required
+ToothFairy2P_481,47,48,0,Contact,0,Contact,1,0.4981,0.4981,0.4742,0.0277,Review Required
+ToothFairy2P_482,17,18,0,Contact,0,Contact,1,0.6968,0.6968,0.2448,0.0584,Review Required
+ToothFairy2P_482,27,28,0,Contact,0,Contact,1,0.7935,0.7935,0.1564,0.0502,Prediction Meets Threshold
+ToothFairy2P_482,37,38,0,Contact,0,Contact,1,0.479,0.479,0.3285,0.1925,Review Required
+ToothFairy2P_482,47,48,1,Independent,0,Contact,0,0.811,0.811,0.1637,0.0253,Prediction Meets Threshold
+ToothFairy2P_485,37,38,0,Contact,0,Contact,1,0.9131,0.9131,0.0748,0.0121,Prediction Meets Threshold
+ToothFairy2P_485,47,48,0,Contact,0,Contact,1,0.8325,0.8325,0.1539,0.0136,Prediction Meets Threshold
+ToothFairy2P_486,17,18,0,Contact,1,Independent,0,0.624,0.294,0.624,0.0819,Review Required
+ToothFairy2P_486,27,28,0,Contact,1,Independent,0,0.6482,0.2888,0.6482,0.063,Review Required
+ToothFairy2P_486,37,38,1,Independent,1,Independent,1,0.8554,0.1019,0.8554,0.0427,Prediction Meets Threshold
+ToothFairy2P_486,47,48,0,Contact,1,Independent,0,0.8254,0.127,0.8254,0.0477,Prediction Meets Threshold
+ToothFairy2P_489,27,28,1,Independent,1,Independent,1,0.5583,0.3212,0.5583,0.1205,Review Required
+ToothFairy2P_489,37,38,1,Independent,1,Independent,1,0.8364,0.1139,0.8364,0.0496,Prediction Meets Threshold
+ToothFairy2P_489,47,48,1,Independent,1,Independent,1,0.8449,0.0999,0.8449,0.0552,Prediction Meets Threshold
+ToothFairy2P_492,27,28,0,Contact,0,Contact,1,0.7004,0.7004,0.2376,0.062,Prediction Meets Threshold
+ToothFairy2P_492,37,38,1,Independent,0,Contact,0,0.4559,0.4559,0.3899,0.1542,Review Required
+ToothFairy2P_492,47,48,2,Resorption,2,Resorption,1,0.3574,0.3191,0.3234,0.3574,Review Required
+ToothFairy2P_493,37,38,1,Independent,1,Independent,1,0.8689,0.1053,0.8689,0.0258,Prediction Meets Threshold
+ToothFairy2P_493,47,48,0,Contact,0,Contact,1,0.7595,0.7595,0.1959,0.0446,Prediction Meets Threshold
+ToothFairy2P_494,37,38,0,Contact,0,Contact,1,0.8894,0.8894,0.0996,0.0111,Prediction Meets Threshold
+ToothFairy2P_500,47,48,1,Independent,1,Independent,1,0.6412,0.3388,0.6412,0.0201,Review Required
+ToothFairy2P_501,27,28,0,Contact,0,Contact,1,0.7212,0.7212,0.2526,0.0262,Prediction Meets Threshold
+ToothFairy2P_501,37,38,1,Independent,0,Contact,0,0.6519,0.6519,0.2557,0.0923,Review Required
+ToothFairy2P_501,47,48,0,Contact,1,Independent,0,0.5315,0.3285,0.5315,0.1401,Review Required
+ToothFairy2P_502,17,18,0,Contact,0,Contact,1,0.6196,0.6196,0.3632,0.0171,Review Required
+ToothFairy2P_503,17,18,0,Contact,0,Contact,1,0.9028,0.9028,0.0865,0.0107,Prediction Meets Threshold
+ToothFairy2P_503,27,28,1,Independent,0,Contact,0,0.6992,0.6992,0.2398,0.0611,Review Required
+ToothFairy2P_503,37,38,1,Independent,1,Independent,1,0.9194,0.0695,0.9194,0.0111,Prediction Meets Threshold
+ToothFairy2P_503,47,48,0,Contact,0,Contact,1,0.6445,0.6445,0.3305,0.025,Review Required
+ToothFairy2P_504,47,48,0,Contact,0,Contact,1,0.5957,0.5957,0.3967,0.0076,Review Required
+ToothFairy2P_505,47,48,1,Independent,1,Independent,1,0.6074,0.3839,0.6074,0.0087,Review Required
+ToothFairy2P_510,17,18,1,Independent,1,Independent,1,0.5436,0.4139,0.5436,0.0425,Review Required
+ToothFairy2P_510,47,48,0,Contact,0,Contact,1,0.4932,0.4932,0.4252,0.0817,Review Required
+ToothFairy2P_511,37,38,1,Independent,1,Independent,1,0.74,0.179,0.74,0.081,Prediction Meets Threshold
+ToothFairy2P_511,47,48,1,Independent,1,Independent,1,0.4588,0.3112,0.4588,0.23,Review Required
+ToothFairy2P_512,37,38,1,Independent,1,Independent,1,0.5576,0.4214,0.5576,0.021,Review Required
+ToothFairy2P_513,17,18,0,Contact,0,Contact,1,0.5265,0.5265,0.3568,0.1167,Review Required
+ToothFairy2P_513,27,28,0,Contact,0,Contact,1,0.6238,0.6238,0.3022,0.0741,Review Required
+ToothFairy2P_513,37,38,1,Independent,1,Independent,1,0.7102,0.2719,0.7102,0.0179,Prediction Meets Threshold
+ToothFairy2P_513,47,48,0,Contact,0,Contact,1,0.6192,0.6192,0.3304,0.0504,Review Required
+ToothFairy2P_516,47,48,0,Contact,0,Contact,1,0.8838,0.8838,0.1105,0.0057,Prediction Meets Threshold
+ToothFairy2P_517,17,18,0,Contact,1,Independent,0,0.647,0.3314,0.647,0.0217,Review Required
+ToothFairy2P_517,27,28,0,Contact,0,Contact,1,0.6377,0.6377,0.3219,0.0403,Review Required
+ToothFairy2P_517,37,38,1,Independent,1,Independent,1,0.9068,0.0664,0.9068,0.0268,Prediction Meets Threshold
+ToothFairy2P_517,47,48,1,Independent,1,Independent,1,0.9186,0.0618,0.9186,0.0196,Prediction Meets Threshold
+ToothFairy2P_518,17,18,1,Independent,1,Independent,1,0.7761,0.1825,0.7761,0.0414,Prediction Meets Threshold
+ToothFairy2P_518,27,28,1,Independent,1,Independent,1,0.7196,0.2201,0.7196,0.0603,Prediction Meets Threshold
+ToothFairy2P_518,37,38,0,Contact,1,Independent,0,0.6577,0.2906,0.6577,0.0516,Review Required
+ToothFairy2P_518,47,48,1,Independent,1,Independent,1,0.7062,0.2216,0.7062,0.0722,Prediction Meets Threshold
+ToothFairy2P_519,17,18,0,Contact,0,Contact,1,0.4717,0.4717,0.4611,0.0673,Review Required
+ToothFairy2P_519,27,28,1,Independent,1,Independent,1,0.6673,0.2618,0.6673,0.0709,Review Required
+ToothFairy2P_519,37,38,1,Independent,1,Independent,1,0.8118,0.1708,0.8118,0.0174,Prediction Meets Threshold
+ToothFairy2P_519,47,48,0,Contact,0,Contact,1,0.8898,0.8898,0.1041,0.0061,Prediction Meets Threshold
+ToothFairy2P_520,17,18,0,Contact,0,Contact,1,0.9398,0.9398,0.0531,0.007,Prediction Meets Threshold
+ToothFairy2P_520,27,28,0,Contact,0,Contact,1,0.7964,0.7964,0.1938,0.0098,Prediction Meets Threshold
+ToothFairy2P_520,37,38,1,Independent,1,Independent,1,0.7348,0.2285,0.7348,0.0367,Prediction Meets Threshold
+ToothFairy2P_520,47,48,0,Contact,0,Contact,1,0.8588,0.8588,0.1278,0.0134,Prediction Meets Threshold
+ToothFairy2P_522,37,38,1,Independent,1,Independent,1,0.8391,0.1137,0.8391,0.0472,Prediction Meets Threshold
+ToothFairy2P_522,47,48,1,Independent,1,Independent,1,0.9163,0.0577,0.9163,0.026,Prediction Meets Threshold
+ToothFairy2P_523,37,38,1,Independent,1,Independent,1,0.7286,0.2338,0.7286,0.0376,Prediction Meets Threshold
+ToothFairy2P_524,37,38,1,Independent,1,Independent,1,0.7379,0.2104,0.7379,0.0517,Prediction Meets Threshold
+ToothFairy2P_528,47,48,0,Contact,0,Contact,1,0.8656,0.8656,0.1251,0.0093,Prediction Meets Threshold
+ToothFairy2P_530,17,18,0,Contact,1,Independent,0,0.5119,0.4389,0.5119,0.0492,Review Required
+ToothFairy2P_530,27,28,0,Contact,0,Contact,1,0.5902,0.5902,0.3767,0.0331,Review Required
+ToothFairy2P_530,37,38,1,Independent,1,Independent,1,0.8797,0.0878,0.8797,0.0325,Prediction Meets Threshold
+ToothFairy2P_531,37,38,1,Independent,1,Independent,1,0.947,0.0403,0.947,0.0127,Prediction Meets Threshold
+ToothFairy2P_531,47,48,1,Independent,1,Independent,1,0.9395,0.0476,0.9395,0.0129,Prediction Meets Threshold
+ToothFairy2P_534,27,28,0,Contact,1,Independent,0,0.5653,0.3722,0.5653,0.0626,Review Required
+ToothFairy2P_534,37,38,2,Resorption,2,Resorption,1,0.3881,0.2489,0.363,0.3881,Review Required
+ToothFairy2P_534,47,48,0,Contact,0,Contact,1,0.5284,0.5284,0.4261,0.0455,Review Required
+ToothFairy2P_537,17,18,0,Contact,0,Contact,1,0.5623,0.5623,0.3671,0.0706,Review Required
+ToothFairy2P_537,27,28,1,Independent,0,Contact,0,0.4372,0.4372,0.4071,0.1557,Review Required
+ToothFairy2P_537,37,38,0,Contact,0,Contact,1,0.4421,0.4421,0.3623,0.1956,Review Required
+ToothFairy2P_537,47,48,0,Contact,1,Independent,0,0.6516,0.2513,0.6516,0.0971,Review Required
+ToothFairy2P_538,47,48,0,Contact,0,Contact,1,0.5566,0.5566,0.4095,0.0339,Review Required
+ToothFairy2P_540,27,28,0,Contact,0,Contact,1,0.8689,0.8689,0.1132,0.018,Prediction Meets Threshold
+ToothFairy2P_540,37,38,0,Contact,0,Contact,1,0.7548,0.7548,0.2003,0.045,Prediction Meets Threshold
+ToothFairy2P_540,47,48,0,Contact,0,Contact,1,0.7495,0.7495,0.2236,0.0268,Prediction Meets Threshold
+ToothFairy2P_542,47,48,0,Contact,0,Contact,1,0.5804,0.5804,0.3894,0.0301,Review Required
+ToothFairy2P_543,37,38,0,Contact,0,Contact,1,0.9283,0.9283,0.0623,0.0094,Prediction Meets Threshold
+ToothFairy2P_545,37,38,1,Independent,1,Independent,1,0.6102,0.3002,0.6102,0.0896,Review Required
+ToothFairy2P_546,47,48,1,Independent,1,Independent,1,0.7389,0.2139,0.7389,0.0472,Prediction Meets Threshold
+ToothFairy2P_548,17,18,0,Contact,1,Independent,0,0.525,0.4172,0.525,0.0579,Review Required
+ToothFairy2P_548,27,28,0,Contact,0,Contact,1,0.7391,0.7391,0.2176,0.0432,Prediction Meets Threshold
+ToothFairy2P_548,37,38,0,Contact,0,Contact,1,0.4407,0.4407,0.3889,0.1705,Review Required
+ToothFairy2P_548,47,48,1,Independent,0,Contact,0,0.4297,0.4297,0.3507,0.2196,Review Required

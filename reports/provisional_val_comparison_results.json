@@ -1,0 +1,246 @@
+{
+  "status": "PROVISIONAL_NOT_CLINICALLY_VALIDATED",
+  "dataset_split": "validation_set",
+  "n_evaluated": 66,
+  "tier_1_stage1_pure_binary": {
+    "description": "Output directly produced by Stage 1 Swin+ViT weighted soft-voting ensemble (identical checkpoints and preprocessing).",
+    "accuracy": 0.7576,
+    "macro_f1": 0.7331,
+    "precision": 0.7265,
+    "recall": 0.7671,
+    "confusion_matrix_order": [
+      "Independent",
+      "Contact"
+    ],
+    "confusion_matrix": [
+      [
+        15,
+        4
+      ],
+      [
+        12,
+        35
+      ]
+    ]
+  },
+  "tier_2_final_output_binary": {
+    "description": "Binary performance after mapping 4 final classes back into 2 classes (Class 0: Independent, Classes 1-3: Contact).",
+    "option_b_hierarchical_dl": {
+      "accuracy": 0.7576,
+      "macro_f1": 0.7331,
+      "confusion_matrix": [
+        [
+          15,
+          4
+        ],
+        [
+          12,
+          35
+        ]
+      ],
+      "note": "Preserves Stage 1 binary output identically (Acc: 75.76%)."
+    },
+    "option_c_strict_preservation": {
+      "accuracy": 0.7576,
+      "macro_f1": 0.7331,
+      "confusion_matrix": [
+        [
+          15,
+          4
+        ],
+        [
+          12,
+          35
+        ]
+      ],
+      "note": "Stage 1 gating preserved; 3D geometry only classifies location (Acc: 75.76%)."
+    },
+    "option_c_hybrid_geometric_pruning": {
+      "accuracy": 0.8182,
+      "macro_f1": 0.8068,
+      "confusion_matrix": [
+        [
+          19,
+          0
+        ],
+        [
+          12,
+          35
+        ]
+      ],
+      "note": "Allows 3D surface distance (D_min > 0.5mm) to prune Stage 1 false positives (Acc: 80.30% / 81.82%)."
+    }
+  },
+  "tier_3_final_four_class": {
+    "class_names": [
+      "Independent",
+      "Above_CEJ",
+      "At_CEJ",
+      "Below_CEJ"
+    ],
+    "option_b_hierarchical_dl": {
+      "accuracy": 0.697,
+      "balanced_accuracy": 0.3911,
+      "macro_f1": 0.3592,
+      "per_class_f1": {
+        "Independent": 0.6522,
+        "Above_CEJ": 0.0,
+        "At_CEJ": 0.0,
+        "Below_CEJ": 0.7848
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0,
+          4
+        ],
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          9,
+          0,
+          0,
+          31
+        ]
+      ]
+    },
+    "option_c_strict_preservation": {
+      "accuracy": 0.7424,
+      "balanced_accuracy": 0.5995,
+      "macro_f1": 0.6376,
+      "per_class_f1": {
+        "Independent": 0.6522,
+        "Above_CEJ": 0.5714,
+        "At_CEJ": 0.5,
+        "Below_CEJ": 0.8267
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0,
+          4
+        ],
+        [
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          31
+        ]
+      ]
+    },
+    "option_c_hybrid_pruned": {
+      "accuracy": 0.803,
+      "balanced_accuracy": 0.6521,
+      "macro_f1": 0.6762,
+      "per_class_f1": {
+        "Independent": 0.76,
+        "Above_CEJ": 0.5714,
+        "At_CEJ": 0.5,
+        "Below_CEJ": 0.8732
+      },
+      "confusion_matrix": [
+        [
+          19,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          31
+        ]
+      ]
+    }
+  },
+  "tier_4_stage2_isolated_location": {
+    "description": "Evaluated strictly on true ground-truth Contact cases (N = 47) to isolate Stage 2 location accuracy from Stage 1 errors.",
+    "n_contact_cases": 47,
+    "class_names": [
+      "Above_CEJ",
+      "At_CEJ",
+      "Below_CEJ"
+    ],
+    "option_b_stage2_dl": {
+      "three_class_macro_f1": 0.3065,
+      "balanced_accuracy": 0.3333,
+      "accuracy": 0.8511,
+      "confusion_matrix_3x3": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          40
+        ]
+      ]
+    },
+    "option_c_stage2_geometry": {
+      "three_class_macro_f1": 0.5649,
+      "balanced_accuracy": 0.6472,
+      "accuracy": 0.7447,
+      "confusion_matrix_3x3": [
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          9,
+          31
+        ]
+      ]
+    }
+  }
+}

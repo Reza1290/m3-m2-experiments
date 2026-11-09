@@ -1,0 +1,24 @@
+# Experiments Repository Gitignore
+# Ignore junction points / symlinks to shared datasets and weights
+data
+weights
+data/
+weights/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+
+# Checkpoints if saved locally
+checkpoints/
+*.pth
+*.pt
+*.onnx
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
