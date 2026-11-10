@@ -89,6 +89,15 @@ flowchart TD
 > **Do not assume that ToothFairy2 segmentation labels include the clinical relationship classes `Independent`, `Contact`, and `Resorption`.**
 > Tooth masks identify anatomy; they do not by themselves establish clinical contact or root resorption.
 
+> [!IMPORTANT]
+> **Dataset Zip Discovery Protocol: Do Not Silently Download 24–36 GB**
+> When setting up or running scripts that require raw 3D CBCT volumes or ToothFairy2 labels (`data/toothfairy2/Dataset112_ToothFairy2/` or `data/raw/`):
+> 1. Check if `data/toothfairy2/Dataset112_ToothFairy2/` exists and contains volumes.
+> 2. **IF NOT FOUND: STOP AND ASK THE USER:**
+>    > *"File dataset mentah ToothFairy2 belum ditemukan di folder `data/toothfairy2/`. Di mana lokasi file zip ToothFairy2 (`ToothFairy2_Dataset.zip` atau `ToothFairy2.zip`) tersimpan di storage/drive komputer Anda?"*
+> 3. Only after the user provides the local zip path, extract it. Never automatically download 24–36 GB over the internet without explicit user confirmation.
+> 4. **Labeled Data Readiness:** The 2D cropped patches (`data/processed/crops_2d/`) and label manifests (`data/manifests/`) are already tracked in the root repo. Model training and evaluation can be run directly using the pre-extracted labeled crops without re-extracting from raw 3D scans.
+
 Before implementing model training, perform a dataset audit and record:
 1. Which CBCT volumes are available and their file formats.
 2. Whether M2 and M3 masks are present for each target FDI pair.
